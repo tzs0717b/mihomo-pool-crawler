@@ -4,50 +4,32 @@ mode: rule
 log-level: warning
 ipv6: false
 proxies:
-- name: 新加坡 · 591ms
+- name: 🇸🇬 新加坡 · 568ms · 0.1MB/s
   server: 68.183.227.4
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - cipher: aes-128-gcm
-  name: 日本 · 598ms
+  name: 🌐 未知地区 · 616ms · 0.2MB/s
   password: shadowsocks
   port: 443
-  server: 149.22.87.241
+  server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 未知地区 · 606ms
+  name: 🌐 未知地区 · 632ms
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
-- type: ss
-  name: 日本 · 607ms
-  server: 149.22.87.204
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - cipher: aes-128-gcm
-  name: 未知地区 · 625ms
+  name: 🇯🇵 日本 · 641ms · 0.2MB/s
   password: shadowsocks
   port: 443
-  server: 149.22.87.204
+  server: 149.22.87.241
   type: ss
 - type: ss
-  name: 日本 · 629ms
-  server: 149.22.87.241
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 日本 · 656ms
+  name: 🇯🇵 日本 · 662ms · 0.3MB/s
   server: 149.22.87.240
   port: 443
   password: shadowsocks
@@ -56,68 +38,24 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 日本 · 663ms
-  server: 84.247.155.196
+  name: 🇯🇵 日本 · 664ms · 0.3MB/s
+  server: 149.22.87.241
   port: 443
-  password: 3eOFeNssde7PYYMv
-  cipher: aes-256-gcm
+  password: shadowsocks
+  cipher: aes-128-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 美国 · 694ms
-  password: 'null'
+- type: ss
+  name: 🇯🇵 日本 · 666ms · 0.2MB/s
+  server: 149.22.87.204
   port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
+  password: shadowsocks
+  cipher: aes-128-gcm
   udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 香港 · 697ms
-  type: http
-  server: 202.85.53.25
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 美国 · 711ms
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sni: 172.64.68.89
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 719ms
-  password: 'null'
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 香港 · 721ms
-  password: 'null'
-  port: 443
-  server: fan.240104.xyz
-  sni: fan.240104.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 美国 · 721ms
-  password: 'null'
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 美国 · 732ms
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 680ms · 0.2MB/s
   port: 443
   server: 172.64.69.89
   skip-cert-verify: true
@@ -126,40 +64,7 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 香港 · 733ms
-  port: 443
-  server: fan.240104.xyz
-  skip-cert-verify: true
-  sni: fan.240104.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 734ms
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国 · 735ms
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sni: 172.64.68.89
-  tls: true
-  type: http
-- name: 美国 · 739ms
-  password: None
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 752ms
+- name: 🇺🇸 美国 · 681ms · 0.2MB/s
   password: 'null'
   port: 443
   server: 172.64.68.89
@@ -170,7 +75,7 @@ proxies:
   username: 'null'
   x-toolall-mihomo: true
 - type: vmess
-  name: 韩国 · 753ms
+  name: 🇰🇷 韩国 · 683ms · 0.3MB/s
   server: 140.238.2.250
   port: 443
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
@@ -179,25 +84,72 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: ss
-  name: 日本 · 778ms
-  server: 84.247.155.196
-  port: 80
-  password: 3eOFeNssde7PYYMv
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 日本 · 817ms
-  password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
+- name: 🇺🇸 美国 · 704ms
   port: 443
-  server: 161.33.45.134
+  server: 172.64.69.89
   skip-cert-verify: true
-  sni: www.apple.com
-  type: trojan
+  tls: true
+  type: http
+- name: 🇩🇪 德国 · 730ms
+  password: 'null'
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸 美国 · 735ms
+  password: 'null'
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: '🇺🇸 美国 · 735ms #2'
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  sni: 172.64.68.89
+  sub_tag: P002-260618
+  tls: true
+  type: http
   udp: true
   x-toolall-mihomo: true
-- name: 日本 · 873ms
+- name: 🇺🇸 美国 · 742ms
+  password: 'null'
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸 美国 · 745ms
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  sni: 172.64.68.89
+  tls: true
+  type: http
+- name: 🇭🇰 香港 · 763ms
+  type: http
+  server: 202.85.53.25
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸 美国 · 785ms
+  password: None
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇯🇵 日本 · 814ms
   password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
   port: 443
   server: 161.33.5.106
@@ -206,7 +158,24 @@ proxies:
   type: trojan
   udp: true
   x-toolall-mihomo: true
-- name: 越南 · 896ms
+- name: 🇯🇵 日本 · 815ms
+  password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
+  port: 443
+  server: 161.33.45.134
+  skip-cert-verify: true
+  sni: www.apple.com
+  tls: true
+  type: trojan
+- name: 🇯🇵 日本 · 820ms
+  password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
+  port: 443
+  server: 161.33.45.134
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: trojan
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇻🇳 越南 · 903ms
   password: ''
   port: 443
   server: 14.225.71.128
@@ -217,42 +186,16 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
-- name: 韩国 · 896ms
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 158.247.253.243
-  skip-cert-verify: true
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  type: trojan
-- name: 韩国 · 905ms
-  server: 158.247.253.243
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: false
-- name: 美国 · 925ms
-  server: 173.244.56.9
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 越南 · 928ms
-  port: 443
-  server: 14.225.71.128
-  skip-cert-verify: true
-  tls: true
-  type: http
 - type: ss
-  name: 加拿大 · 938ms
-  server: 149.22.95.183
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
+  name: 🇯🇵 日本 · 913ms
+  server: 84.247.155.196
+  port: 80
+  password: 3eOFeNssde7PYYMv
+  cipher: aes-256-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 印度尼西亚 · 964ms
+- name: 🇮🇩 印度尼西亚 · 934ms
   port: 443
   server: 103.86.116.118
   skip-cert-verify: true
@@ -261,17 +204,84 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 韩国 · 971ms
+- name: 🇮🇳 印度 · 954ms
+  server: 152.67.8.205
+  port: 80
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  servername: 🇮🇳IN-152.67.8.205-5772 | 0.07MB
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇻🇳 越南 · 955ms
   port: 443
-  server: 152.69.230.221
+  server: 14.225.71.128
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-  x-toolall-mihomo: true
+- name: 🇨🇦 加拿大 · 959ms
+  server: 149.22.95.183
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - type: ss
-  name: 美国 · 976ms
+  name: 🇨🇦 加拿大 · 967ms
+  server: 149.22.95.183
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 · 967ms
+  server: 158.247.253.243
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 · 983ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 158.247.253.243
+  skip-cert-verify: true
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  type: trojan
+- type: vmess
+  name: 🇮🇳 印度 · 989ms
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- type: ss
+  name: 🇺🇸 美国 · 989ms
+  server: 173.244.56.6
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 995ms
+  server: 173.244.56.6
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- type: ss
+  name: 🇺🇸 美国 · 1005ms
   server: 173.244.56.9
   port: 443
   password: shadowsocks
@@ -279,44 +289,44 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: ss
-  name: 美国 · 979ms
-  server: 173.244.56.6
+- name: 🇭🇰 香港 · 1007ms
   port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 韩国 · 984ms
+  server: fan.240104.xyz
+  skip-cert-verify: true
+  sni: fan.240104.xyz
+  sub_tag: R002-260618
+  tls: true
   type: http
-  server: 152.69.230.221
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 1020ms
+  type: http
+  server: 178.248.73.58
   port: 443
   tls: true
   skip-cert-verify: true
-- name: 加拿大 · 1004ms
-  server: 149.22.95.183
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 美国 · 1007ms
-  server: 156.146.38.169
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - type: ss
-  name: 美国 · 1011ms
-  server: 156.146.38.168
+  name: 🇳🇱 荷兰 · 1022ms
+  server: 158.173.20.171
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
   udp: true
   tls: false
   skip-cert-verify: false
+- name: 🇭🇰 香港 · 1026ms
+  password: 'null'
+  port: 443
+  server: fan.240104.xyz
+  sni: fan.240104.xyz
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
 - type: ss
-  name: 荷兰 · 1014ms
+  name: 🇳🇱 荷兰 · 1027ms
   server: 158.173.20.208
   port: 443
   password: shadowsocks
@@ -324,110 +334,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- cipher: aes-128-gcm
-  name: 英国 · 1018ms
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
-  type: ss
-- type: ss
-  name: 美国 · 1022ms
-  server: 156.146.38.169
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: '美国 · 1022ms #2'
-  server: 173.244.56.6
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 英国 · 1025ms
-  type: http
-  server: 178.248.73.58
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: 荷兰 · 1025ms
+- name: 🇳🇱 荷兰 · 1028ms
   server: 109.201.152.181
   port: 443
   type: ss
   cipher: aes-128-cfb
   password: shadowsocks
 - type: ss
-  name: 美国 · 1025ms
-  server: 156.146.38.170
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 荷兰 · 1031ms
-  server: 158.173.20.171
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- cipher: aes-128-gcm
-  name: 英国 · 1034ms
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-- name: 美国 · 1040ms
-  server: 156.146.38.170
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 美国 · 1042ms
-  server: 156.146.38.168
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- type: ss
-  name: 德国 · 1048ms
-  server: 47.245.173.25
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- cipher: aes-128-gcm
-  name: 英国 · 1050ms
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- type: ss
-  name: 英国 · 1052ms
-  server: 141.98.101.178
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 德国 · 1057ms
-  server: 47.245.174.67
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 1065ms
+  name: 🇬🇧 英国 · 1029ms
   server: 158.173.24.73
   port: 443
   password: shadowsocks
@@ -435,35 +349,78 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 美国 · 1072ms
-  server: 198.98.53.130
+- name: 🇺🇸 美国 · 1029ms
+  server: 173.244.56.9
   port: 443
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-- name: 荷兰 · 1077ms
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 · 1034ms
+  server: 84.247.155.196
+  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- cipher: aes-128-gcm
+  name: 🇬🇧 英国 · 1040ms
+  password: shadowsocks
+  port: 443
+  server: 158.173.24.73
+  type: ss
+- name: 🇬🇧 英国 · 1042ms
+  server: 146.70.61.37
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇳🇱 荷兰 · 1049ms
   server: 158.173.20.171
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- type: vless
-  name: 日本 · 1099ms
-  server: 207.65.189.9
+- name: 🇯🇵 日本 · 1052ms
   port: 443
-  uuid: 57715fc4-f787-4e90-9eb2-53fa515fbf37
-  udp: true
+  server: fan.571589.xyz
   tls: true
-  servername: spsudu.pages.dev
-  sni: spsudu.pages.dev
+  type: http
+- cipher: aes-128-gcm
+  name: 🇬🇧 英国 · 1057ms
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- type: ss
+  name: '🇬🇧 英国 · 1057ms #2'
+  server: 141.98.101.179
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: spsudu.pages.dev
-- name: 日本 · 1108ms
+- type: ss
+  name: 🇬🇧 英国 · 1061ms
+  server: 141.98.101.178
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- cipher: aes-128-gcm
+  name: 🇬🇧 英国 · 1067ms
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- name: 🇺🇸 美国 · 1071ms
+  server: 156.146.38.169
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 · 1077ms
   password: ''
   port: 443
   server: fan.571589.xyz
@@ -474,14 +431,85 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
-- name: 美国 · 1112ms
-  server: 37.19.198.243
+- type: ss
+  name: 🇩🇪 德国 · 1077ms
+  server: 47.245.174.67
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1078ms
+  server: 156.146.38.168
   port: 443
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
 - type: ss
-  name: 美国 · 1116ms
+  name: 🇺🇸 美国 · 1082ms
+  server: 156.146.38.168
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 · 1091ms
+  server: 156.146.38.170
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇺🇸 美国 · 1094ms
+  server: 37.19.198.236
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 · 1098ms
+  password: None
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇸🇬 新加坡 · 1106ms
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇺🇸 美国 · 1108ms
+  server: 156.146.38.169
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1113ms
+  server: 156.146.38.170
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- type: ss
+  name: 🇺🇸 美国 · 1135ms
   server: 37.19.198.160
   port: 443
   password: shadowsocks
@@ -490,22 +518,16 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 美国 · 1121ms
-  server: 37.19.198.236
+  name: 🇺🇸 美国 · 1136ms
+  server: 37.19.198.243
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 澳大利亚 · 1126ms
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 45.63.30.142
-  sni: connectwithemployerstohireyouridealteam.com
-  type: trojan
 - encryption: none
-  name: 未知地区 · 1129ms
+  name: 🌐 未知地区 · 1139ms
   network: tcp
   packet-encoding: xudp
   port: 443
@@ -516,71 +538,25 @@ proxies:
   uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
   x-toolall-mihomo: true
   xudp: true
-- type: trojan
-  name: 澳大利亚 · 1129ms
-  server: 45.63.30.142
+- name: 🇺🇸 美国 · 1139ms
+  server: 37.19.198.160
   port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇦🇺 澳大利亚 · 1143ms
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  tls: true
-  servername: connectwithemployerstohireyouridealteam.com
+  port: 443
+  server: 45.63.30.142
   sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
-- type: ss
-  name: 美国 · 1136ms
-  server: 37.19.198.244
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 美国 · 1139ms
-  server: 37.19.198.244
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- type: ss
-  name: 美国 · 1140ms
-  server: 37.19.198.243
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 美国 · 1144ms
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 澳大利亚 · 1146ms
+  type: trojan
+- name: 🇦🇺 澳大利亚 · 1146ms
   server: 45.63.30.142
   port: 443
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
-- name: 日本 · 1148ms
-  server: 84.247.155.196
-  port: 443
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- cipher: aes-256-gcm
-  name: 日本 · 1158ms
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
-- name: 美国 · 1160ms
-  server: 37.19.198.160
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - encryption: none
   http-opts:
     headers:
@@ -588,7 +564,7 @@ proxies:
       - fast.com
     path:
     - /
-  name: 荷兰 · 1190ms
+  name: 🇳🇱 荷兰 · 1153ms
   network: http
   port: 443
   server: 146.190.21.145
@@ -597,664 +573,53 @@ proxies:
   uuid: 40992c2a-513e-4837-9594-23411fd42afd
   xudp: true
 - type: trojan
-  name: 美国 · 1209ms
-  server: 167.88.61.175
+  name: 🇦🇺 澳大利亚 · 1161ms
+  server: 45.63.30.142
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
   tls: true
-  servername: blog.browseseniorrolesandenhanceyourcareertoday.com
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  servername: connectwithemployerstohireyouridealteam.com
+  sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
-- name: 新加坡 · 1225ms
-  type: http
-  server: 154.26.139.24
+- name: 🇺🇸 美国 · 1161ms
+  server: 37.19.198.244
   port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  skip-cert-verify: true
-- name: 英国 · 1225ms
-  server: 146.70.61.37
-  port: 8080
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 美国 · 1226ms
-  server: 167.88.61.52
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 美国 · 1163ms
+  server: 37.19.198.236
   port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: 日本 · 1243ms
-  port: 443
-  server: fan.571589.xyz
-  tls: true
-  type: http
-- name: 美国 · 1264ms
-  password: 0324fbc29561
-  port: 443
-  server: sdf65h46wr.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-  x-toolall-mihomo: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - type: ss
-  name: 南非 · 1265ms
-  server: 102.37.156.224
+  name: 🇺🇸 美国 · 1177ms
+  server: 37.19.198.244
   port: 443
-  password: aduB9HGxQHjA2SBMRjkHX6
-  cipher: chacha20-ietf-poly1305
+  password: shadowsocks
+  cipher: aes-128-gcm
   udp: true
   tls: false
   skip-cert-verify: false
-- cipher: chacha20-ietf-poly1305
-  name: 南非 · 1266ms
-  password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🇰🇷 韩国 · 1201ms
   port: 443
-  server: 102.37.156.224
-  type: ss
-- type: vless
-  name: 德国 · 1272ms
-  server: 163.245.42.87
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
+  server: 152.69.230.221
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
-  servername: mother-earth.fyi
-  sni: mother-earth.fyi
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 未知地区 · 1278ms
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 163.245.42.87
-  servername: mother-earth.fyi
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  x-toolall-mihomo: true
-- name: 英国 · 1300ms
-  server: 82.38.31.210
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- client-fingerprint: qq
-  name: 未知地区 · 1304ms
-  port: 443
-  server: 136.148.83.69
-  servername: szqbx-ru-77dc.my-fade.cloud
-  tls: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  x-toolall-mihomo: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 未知地区 · 1305ms
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 163.245.42.87
-  servername: mother-earth.fyi
-  tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   x-toolall-mihomo: true
-- name: 英国 · 1314ms
-  server: 82.38.31.212
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- client-fingerprint: chrome
-  name: 未知地区 · 1316ms
-  port: 443
-  server: 136.148.83.69
-  servername: szqbx-ru-77dc.my-fade.cloud
-  tls: true
-  type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 1332ms
-  server: 82.38.31.211
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 德国 · 1335ms
-  server: 109.106.15.99
-  port: 443
-  type: vless
-  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- type: vless
-  name: 德国 · 1337ms
-  server: 187.7.206.179
-  port: 443
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 1fw71df.virtual-network.lol
-  sni: 1fw71df.virtual-network.lol
-  skip-cert-verify: false
-- name: 法国 · 1346ms
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  servername: ov-france1.09vpn.com
-  tls: false
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    headers:
-      Host: ov-france1.09vpn.com
-    path: /vless/
-- name: 德国 · 1349ms
-  server: 193.108.119.15
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: false
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 阿联酋 · 1350ms
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 163.245.42.87
-  servername: mother-earth.fyi
-  skip-cert-verify: false
-  sni: mother-earth.fyi
-  tls: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  x-toolall-mihomo: true
-- type: vless
-  name: 德国 · 1353ms
-  server: 187.7.206.176
-  port: 443
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 1fw71dc.virtual-network.lol
-  sni: 1fw71dc.virtual-network.lol
-  skip-cert-verify: false
-- name: 英国 · 1364ms
-  server: 82.38.31.206
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 加拿大 · 1388ms
+- name: 🇨🇦 加拿大 · 1212ms
   server: 137.184.174.93
   port: 8080
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- type: trojan
-  name: 美国 · 1403ms
-  server: www.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: 242a3d8eee5e4ed1a6bfa4141d549a25
-  udp: true
-  tls: true
-  skip-cert-verify: false
-- type: trojan
-  name: 美国 · 1406ms
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  udp: true
-  tls: true
-  skip-cert-verify: false
-- type: ss
-  name: 德国 · 1413ms
-  server: 47.254.167.157
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  tls: false
-  skip-cert-verify: false
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: 未知地区 · 1425ms
-  network: tcp
-  packet-encoding: xudp
-  port: 443
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  server: pl.galacticworld.online
-  servername: pl.galacticworld.online
-  tls: true
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  x-toolall-mihomo: true
-- name: 印度尼西亚 · 1447ms
-  password: 'null'
-  port: 443
-  server: 178.248.73.58
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  name: 印度 · 1462ms
-  network: ws
-  port: 443
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
-  tls: true
-  type: vless
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
-  ws-opts:
-    headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-    path: /0175469f14317d82
-  x-toolall-mihomo: true
-- name: 美国 · 1478ms
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: usgp1-cdn-route.couldflare-cdn.com
-  sni: usgp1-cdn-route.couldflare-cdn.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  x-toolall-mihomo: true
-- name: 德国 · 1481ms
-  password: None
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 法国 · 1483ms
-  server: 145.239.55.210
-  port: 80
-  type: vmess
-  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- type: vless
-  name: 荷兰 · 1491ms
-  server: 130.78.30.147
-  port: 443
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 105ky37.virtual-network.lol
-  sni: 105ky37.virtual-network.lol
-  skip-cert-verify: false
-- name: 美国 · 1522ms
-  password: 'null'
-  port: 443
-  server: 129.153.93.183
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- type: ss
-  name: 荷兰 · 1541ms
-  server: 193.29.139.234
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 比利时 · 1546ms
-  port: 443
-  server: 146.70.123.98
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- client-fingerprint: qq
-  name: 未知地区 · 1550ms
-  port: 443
-  server: 136.148.83.69
-  servername: szqbx-ru-77dc.my-fade.cloud
-  tls: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-- name: 英国 · 1552ms
-  server: 136.148.83.69
-  port: 443
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- type: vless
-  name: 荷兰 · 1555ms
-  server: 94.183.164.176
-  port: 443
-  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
-  udp: true
-  tls: true
-  servername: optim.tildacdn.pub
-  sni: optim.tildacdn.pub
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: _KeOS5u_irk1547CMVB3RdwQzz1SzrQZk-IV-btF7TU
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ebl
-- name: 法国 · 1567ms
-  port: 443
-  server: 103.82.101.44
-  skip-cert-verify: true
-  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
 - type: vmess
-  name: 法国 · 1568ms
-  server: 145.239.55.210
-  port: 80
-  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  servername: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  sni: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 比利时 · 1576ms
-  password: None
-  port: 443
-  server: 146.70.176.242
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 西班牙 · 1579ms
-  port: 443
-  server: 130.195.250.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 德国 · 1582ms
-  password: 'null'
-  port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 比利时 · 1589ms
-  port: 443
-  server: 146.70.176.242
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 奥地利 · 1604ms
-  port: 443
-  server: 146.70.244.18
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- client-fingerprint: qq
-  name: 未知地区 · 1609ms
-  network: tcp
-  port: 443
-  server: 136.148.83.69
-  servername: szqbx-ru-77dc.my-fade.cloud
-  tls: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  ws-opts:
-    path: /
-  x-toolall-mihomo: true
-- name: 荷兰 · 1613ms
-  server: 193.29.139.223
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 奥地利 · 1614ms
-  port: 443
-  server: 146.70.244.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 法国 · 1629ms
-  port: 443
-  server: 149.102.245.65
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 1629ms
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1639ms
-  port: 443
-  server: 12.221.146.147
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1648ms
-  password: None
-  port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 荷兰 · 1649ms
-  port: 443
-  server: 51.158.243.91
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 荷兰 · 1657ms
-  password: ''
-  port: 443
-  server: 149.36.51.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 新加坡 · 1660ms
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 美国 · 1662ms
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 英国 · 1663ms
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: trojan
-  name: 美国 · 1664ms
-  server: 169.197.140.245
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  tls: true
-  servername: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: false
-- name: 德国 · 1668ms
-  password: None
-  port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 奥地利 · 1668ms
-  port: 443
-  server: 146.70.244.2
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: vmess
-  name: 美国 · 1671ms
-  server: 188.114.99.137
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国 · 1672ms
-  network: tcp
-  port: 8080
-  reality-opts:
-    public-key: hp5yxgJWnnxhXB-tnQye5RbC1_JPtUKrBHPgiQP0Pl4
-    short-id: 1623547890abcdef
-  server: 186.241.72.210
-  servername: images.apple.com
-  tls: true
-  type: vless
-  uuid: 6aaf9c9e-1bb2-4be6-91a7-945a261f7052
-  x-toolall-mihomo: true
-- name: 德国 · 1672ms
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 波兰 · 1672ms
-  password: 'null'
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- type: ss
-  name: 德国 · 1676ms
-  server: 77.90.10.175
-  port: 8086
-  password: f2Nq5YLnyclPaWR8my7/Vdd3ZX8URncXZNly5+HcUSs=:dQ6WYcPpGX5xIxUVPAR8w1A9eY6kEVoKKW3HleJ6o8Y=
-  cipher: 2022-blake3-aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 阿联酋 · 1677ms
-  port: 443
-  server: 149.88.96.12
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: vmess
-  name: 美国 · 1681ms
+  name: 🇺🇸 美国 · 1213ms
   server: www.shopify.com
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
@@ -1268,1052 +633,14 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 美国 · 1683ms
-  password: None
+- name: 🇺🇸 美国 · 1230ms
+  server: 198.98.53.130
   port: 443
-  server: 12.202.180.118
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 波兰 · 1685ms
-  password: None
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 法国 · 1691ms
-  password: None
-  port: 443
-  server: 84.235.228.156
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 未知地区 · 1693ms
-  port: 443
-  server: 146.70.221.34
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: vmess
-  name: 美国 · 1697ms
-  server: 104.18.42.163
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: 新加坡 · 1700ms
-  password: None
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 美国 · 1702ms
-  port: 443
-  server: 23.133.176.14
-  skip-cert-verify: true
-  tls: true
-  type: http
-- type: vless
-  name: 荷兰 · 1702ms
-  server: 196.196.148.63
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 717252g.nl8.h1clayd.click
-  sni: 717252g.nl8.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: 波兰 · 1704ms
-  port: 443
-  server: 151.115.54.133
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 1706ms
-  port: 443
-  server: 176.94.74.21
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1707ms
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1714ms
-  password: None
-  port: 443
-  server: 146.70.221.18
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- type: vmess
-  name: 未知地区 · 1715ms
-  server: 172.64.145.93
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  cipher: auto
-  alterId: 0
-  tls: true
-  servername: guanwang.awsno.com
-  sni: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: 美国 · 1715ms
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 新加坡 · 1719ms
-  port: 443
-  server: 154.26.139.24
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 1721ms
-  password: None
-  port: 443
-  server: 149.22.86.1
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1722ms
-  password: None
-  port: 443
-  server: 87.120.103.242
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1723ms
-  password: None
-  port: 443
-  server: 87.120.103.226
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 阿联酋 · 1730ms
-  port: 443
-  server: 185.245.84.50
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1740ms
-  password: 'null'
-  port: 443
-  server: 89.124.11.9
-  skip-cert-verify: true
-  sni: 89.124.11.9
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 未知地区 · 1748ms
-  password: ''
-  port: 443
-  server: 149.22.85.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 未知地区 · 1754ms
-  port: 443
-  server: 89.124.11.9
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1755ms
-  port: 443
-  server: 89.124.11.9
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 未知地区 · 1766ms
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 1777ms
-  server: 82.38.31.193
-  port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 美国 · 1790ms
-  port: 443
-  server: 149.88.21.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1795ms
-  port: 443
-  server: 91.92.250.33
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1812ms
-  password: 'null'
-  port: 443
-  server: 38.28.193.188
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 新加坡 · 1812ms
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 15.235.184.127
-  skip-cert-verify: false
-  sni: exploredigitaljobplatformandfindonlinework.com
-  type: trojan
-- name: 美国 · 1814ms
-  port: 443
-  server: 38.28.193.1
-  skip-cert-verify: true
-  sni: 38.28.193.1
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1818ms
-  password: ''
-  port: 443
-  server: 149.22.85.78
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 美国 · 1823ms
-  port: 443
-  server: fan.226278.xyz
-  sni: fan.226278.xyz
-  sub_tag: Z001-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1828ms
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 德国 · 1834ms
-  port: 443
-  server: 217.92.132.233
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 1835ms
-  type: http
-  server: 217.92.132.233
-  port: 443
-  tls: true
-  sni: 217.92.132.233
-  skip-cert-verify: true
-- name: 荷兰 · 1835ms
-  password: 'null'
-  port: 443
-  server: 185.140.209.235
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 美国 · 1841ms
-  password: ''
-  port: 443
-  server: 149.88.21.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 美国 · 1850ms
-  port: 443
-  server: 149.34.248.65
-  skip-cert-verify: true
-  sni: 149.34.248.65
-  tls: true
-  type: http
+  password: eDfN7SODQceIOmIAbtJJtK
 - type: ss
-  name: 德国 · 1854ms
-  server: 8.220.81.25
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 美国 · 1857ms
-  port: 443
-  server: 162.217.114.50
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1858ms
-  password: None
-  port: 443
-  server: 213.207.130.34
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 德国 · 1858ms
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
-  skip-cert-verify: true
-  sni: a7acacbe.acsnet.co
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: testuser1
-  x-toolall-mihomo: true
-- name: 荷兰 · 1859ms
-  password: 'null'
-  port: 443
-  server: 103.97.88.154
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 荷兰 · 1863ms
-  port: 443
-  server: 185.140.209.235
-  skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1863ms
-  port: 443
-  server: 38.28.193.188
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 荷兰 · 1867ms
-  password: 'null'
-  port: 443
-  server: 103.97.88.154
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 未知地区 · 1868ms
-  port: 443
-  server: 185.225.28.50
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1871ms
-  port: 443
-  server: 109.248.149.34
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1871ms
-  port: 443
-  server: fan.226278.xyz
-  tls: true
-  type: http
-- name: 荷兰 · 1881ms
-  port: 443
-  server: 185.246.153.42
-  skip-cert-verify: true
-  sni: 482c8436a1f7c908b48a1757abb5dd79-3791fb4df2db250b.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 法国 · 1892ms
-  password: None
-  port: 443
-  server: 82.66.235.221
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 德国 · 1894ms
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 167.172.172.190
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  username: testuser1
-  x-toolall-mihomo: true
-- name: 法国 · 1895ms
-  port: 443
-  server: 103.82.101.43
-  skip-cert-verify: true
-  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 以色列 · 1897ms
-  password: 'null'
-  port: 443
-  server: 62.90.77.30
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 英国 · 1901ms
-  server: 82.38.31.192
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 以色列 · 1907ms
-  port: 443
-  server: 62.90.77.30
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 1913ms
-  password: ''
-  port: 443
-  server: 37.203.35.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- type: ss
-  name: 德国 · 1921ms
-  server: 8.209.72.224
-  port: 443
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  cipher: 2022-blake3-chacha20-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 德国 · 1924ms
-  password: 'null'
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: '德国 · 1924ms #2'
-  password: 'null'
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 德国 · 1938ms
-  password: None
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1941ms
-  port: 443
-  server: 185.216.35.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 1941ms
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 1944ms
-  port: 443
-  server: 185.216.35.130
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 1949ms
-  password: None
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1955ms
-  port: 443
-  server: 96.5.129.85
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 法国 · 1957ms
-  password: 'null'
-  port: 443
-  server: 82.66.235.221
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 德国 · 1960ms
-  password: 'null'
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 未知地区 · 1960ms
-  port: 443
-  server: 34.249.214.108
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 未知地区 · 1963ms
-  port: 443
-  server: 18.200.158.139
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 美国 · 1966ms
-  network: ws
-  password: 6-FrR5YsfjfyNp6AIFZgcQ
-  port: 443
-  server: ipfast.kingmna.com
-  skip-cert-verify: true
-  sni: cdn.akamai.steamstatic.com
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
-    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
-- name: 西班牙 · 1972ms
-  port: 443
-  server: 82.102.17.178
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 2001ms
-  port: 443
-  server: 109.204.88.17
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: vmess
-  name: 法国 · 2004ms
-  server: 54.37.131.126
-  port: 80
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  servername: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-  sni: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 未知地区 · 2012ms
-  server: 64.176.7.205
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
-  skip-cert-verify: false
-- name: 未知地区 · 2028ms
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 2029ms
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 2030ms
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 2039ms
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 2043ms
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 未知地区 · 2051ms
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 意大利 · 2068ms
-  port: 443
-  server: 109.116.41.154
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 未知地区 · 2068ms
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 未知地区 · 2073ms
-  password: None
-  port: 443
-  server: 195.54.178.210
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 德国 · 2075ms
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 英国 · 2078ms
-  server: 82.38.31.181
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- type: ss
-  name: 英国 · 2082ms
-  server: 178.83.185.156
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 美国 · 2094ms
-  port: 443
-  server: 162.244.227.36
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 2098ms
-  server: 82.38.31.210
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 德国 · 2110ms
-  server: 88.216.70.125
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  udp: true
-  tls: true
-  servername: o685y.save-node.com
-  sni: o685y.save-node.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-- name: 美国 · 2113ms
-  password: None
-  port: 443
-  server: 162.244.227.36
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: 美国 · 2136ms
-  port: 443
-  server: 24.225.10.211
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 2171ms
-  server: 82.38.31.48
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 荷兰 · 2176ms
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 82.196.9.7
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: testuser1
-  x-toolall-mihomo: true
-- name: 英国 · 2184ms
-  server: 82.38.31.47
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 加拿大 · 2193ms
-  server: 216.152.147.93
-  port: 443
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
-- name: 意大利 · 2195ms
-  password: None
-  port: 443
-  server: 93.42.177.250
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 2209ms
-  server: 82.38.31.205
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: '英国 · 2209ms #2'
-  server: 82.38.31.180
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 未知地区 · 2221ms
-  server: 185.220.223.78
-  port: 443
-  type: vless
-  uuid: 70f1696c-8b82-4614-9c1e-8ec21201684d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: wEJIqlLqor9Z_LMHvcsXh5FSoKMz3NbbcORwPDBgbhw
-    short-id: 5a8e1a04f3d92b67
-  servername: lv.meltun.org
-  client-fingerprint: safari
-  network: tcp
-  udp: true
-- name: 瑞士 · 2225ms
-  password: None
-  port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 2229ms
-  server: 82.38.31.179
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 德国 · 2231ms
-  password: 'null'
-  port: 443
-  server: 159.69.94.125
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 加拿大 · 2249ms
-  port: 443
-  server: 142.44.210.129
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 荷兰 · 2338ms
-  server: 45.43.153.33
-  port: 443
-  type: vless
-  uuid: d6752c6b-80ae-4a91-b446-bb330f7f8177
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: 88a13cf2655c
-  servername: www.foxsports.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 巴西 · 2362ms
-  port: 443
-  server: 134.65.17.77
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 2382ms
-  server: 82.38.31.198
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 荷兰 · 2418ms
-  password: 'null'
-  port: 443
-  server: 89.150.35.94
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 英国 · 2422ms
-  server: 82.38.31.191
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 英国 · 2423ms
-  server: 82.38.31.190
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- type: ss
-  name: 英国 · 2426ms
-  server: 82.38.31.195
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 英国 · 2428ms
-  server: 178.83.185.156
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- type: ss
-  name: 荷兰 · 2478ms
+  name: 🇳🇱 荷兰 · 1248ms
   server: 193.29.139.235
   port: 443
   password: oZIoA69Q8yhcQV8ka3Pa3A
@@ -2321,17 +648,228 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 德国 · 2488ms
+- type: ss
+  name: 🇩🇪 德国 · 1252ms
+  server: 47.254.143.251
   port: 443
-  server: 185.44.107.166
-  skip-cert-verify: true
-  sub_tag: R002-260618
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- cipher: chacha20-ietf-poly1305
+  name: 🇿🇦 南非 · 1268ms
+  password: aduB9HGxQHjA2SBMRjkHX6
+  port: 443
+  server: 102.37.156.224
+  type: ss
+- type: ss
+  name: 🇿🇦 南非 · 1277ms
+  server: 102.37.156.224
+  port: 443
+  password: aduB9HGxQHjA2SBMRjkHX6
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1289ms
+  server: 167.88.61.52
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇦🇪 阿联酋 · 1291ms
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 163.245.42.87
+  servername: mother-earth.fyi
+  skip-cert-verify: false
+  sni: mother-earth.fyi
   tls: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🌐 未知地区 · 1294ms
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 163.245.42.87
+  servername: mother-earth.fyi
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇳🇱 荷兰 · 1296ms
+  server: 193.29.139.234
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1302ms
+  server: 82.38.31.212
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 · 1305ms
   type: http
+  server: 152.69.230.221
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧 英国 · 1306ms
+  server: 82.38.31.219
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1307ms
+  server: 82.38.31.176
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1309ms
+  server: 82.38.31.61
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇸🇬 新加坡 · 1313ms
+  type: http
+  server: 154.26.139.24
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+- type: vless
+  name: 🇩🇪 德国 · 1314ms
+  server: 163.245.42.87
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mother-earth.fyi
+  sni: mother-earth.fyi
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+- name: 🇬🇧 英国 · 1314ms
+  server: 82.38.31.217
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '🇬🇧 英国 · 1314ms #2'
+  server: 82.38.31.49
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: ss
+  name: 🇬🇧 英国 · 1315ms
+  server: 82.38.31.192
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: '🇬🇧 英国 · 1315ms #2'
+  server: 82.38.31.215
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1316ms
+  server: 82.38.31.217
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1320ms
+  server: 82.38.31.205
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1321ms
+  password: 0324fbc29561
+  port: 443
+  server: sdf65h46wr.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
   udp: true
   x-toolall-mihomo: true
 - type: ss
-  name: 英国 · 2512ms
+  name: 🇬🇧 英国 · 1321ms
+  server: 82.38.31.165
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇯🇵 日本 · 1329ms
+  server: 84.247.155.196
+  port: 443
+  password: 3eOFeNssde7PYYMv
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1330ms
+  server: 82.38.31.195
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: '🇬🇧 英国 · 1330ms #2'
+  server: 82.38.31.218
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1331ms
+  server: 82.38.31.212
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 1334ms
   server: 82.38.31.178
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -2339,38 +877,490 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 美国 · 2525ms
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 107.151.238.27
-  sni: 6b97ee1b.acsnet.co
-  sub_tag: R002-260618
-  tls: true
-  type: http
+- type: ss
+  name: 🇬🇧 英国 · 1336ms
+  server: 82.38.31.187
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
   udp: true
-  username: testuser1
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1341ms
+  server: 82.38.31.219
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🌐 未知地区 · 1343ms
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  server: 163.245.42.87
+  servername: mother-earth.fyi
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   x-toolall-mihomo: true
-- name: 英国 · 2544ms
+- type: ss
+  name: 🇬🇧 英国 · 1343ms
+  server: 82.38.31.206
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: '🇬🇧 英国 · 1343ms #2'
+  server: 82.38.31.48
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: ss
+  name: 🇬🇧 英国 · 1344ms
+  server: 82.38.31.202
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1346ms
+  server: 82.38.31.47
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: ss
+  name: 🇬🇧 英国 · 1347ms
+  server: 82.38.31.49
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1350ms
+  server: 82.38.31.181
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: '🇬🇧 英国 · 1350ms #2'
+  server: 82.38.31.210
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 1351ms
+  server: 82.38.31.48
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1352ms
+  server: 82.38.31.202
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1358ms
+  server: 82.38.31.35
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: vless
+  name: 🇩🇪 德国 · 1360ms
+  server: 187.7.206.179
+  port: 443
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: 1fw71df.virtual-network.lol
+  sni: 1fw71df.virtual-network.lol
+  skip-cert-verify: false
+- type: vless
+  name: 🇩🇪 德国 · 1361ms
+  server: 187.7.206.176
+  port: 443
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: 1fw71dc.virtual-network.lol
+  sni: 1fw71dc.virtual-network.lol
+  skip-cert-verify: false
+- type: trojan
+  name: 🇺🇸 美国 · 1361ms
+  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+  udp: true
+  tls: true
+  skip-cert-verify: false
+- name: 🇩🇪 德国 · 1366ms
+  server: 109.106.15.99
+  port: 443
+  type: vless
+  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: key-master-saver.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 · 1370ms
+  server: 178.83.185.156
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇸🇬 新加坡 · 1372ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 15.235.184.127
+  skip-cert-verify: false
+  sni: exploredigitaljobplatformandfindonlinework.com
+  type: trojan
+- client-fingerprint: qq
+  name: 🌐 未知地区 · 1375ms
+  network: tcp
+  port: 443
+  server: 136.148.83.69
+  servername: szqbx-ru-77dc.my-fade.cloud
+  tls: true
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  ws-opts:
+    path: /
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 1389ms
+  server: 82.38.31.162
+  port: 443
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- cipher: aes-256-gcm
+  name: 🇯🇵 日本 · 1391ms
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
+- name: 🇬🇧 英国 · 1392ms
+  server: 82.38.31.186
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1396ms
   server: 82.38.31.189
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- type: vless
-  name: 德国 · 2560ms
-  server: o685y.save-node.com
-  port: 443
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  udp: true
-  tls: true
-  servername: o685y.save-node.com
-  sni: o685y.save-node.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+- name: 🇬🇧 英国 · 1398ms
+  server: 82.38.31.216
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1401ms
+  server: 82.38.31.218
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1402ms
+  server: 82.38.31.180
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: '🇬🇧 英国 · 1402ms #2'
+  server: 82.38.31.192
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - type: ss
-  name: 英国 · 2664ms
+  name: 🇬🇧 英国 · 1406ms
+  server: 82.38.31.214
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1407ms
+  server: 82.38.31.208
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 1408ms
+  server: 82.38.31.61
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1410ms
+  server: 82.38.31.162
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: ss
+  name: 🇬🇧 英国 · 1412ms
+  server: 82.38.31.47
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: '🇬🇧 英国 · 1412ms #2'
+  server: 82.38.31.176
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1413ms
+  server: 82.38.31.62
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: ss
+  name: 🇬🇧 英国 · 1414ms
+  server: 82.38.31.210
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1417ms
+  server: 82.38.31.46
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: '🇬🇧 英国 · 1417ms #2'
+  server: 82.38.31.179
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1420ms
+  server: 82.38.31.207
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 1421ms
+  server: 82.38.31.185
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1422ms
+  server: 82.38.31.190
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸 美国 · 1423ms
+  port: 443
+  server: 137.175.22.56
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 1423ms
+  server: 82.38.31.198
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1427ms
+  server: 82.38.31.179
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1427ms
+  server: 37.19.198.243
+  port: 443
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- type: ss
+  name: 🇬🇧 英国 · 1432ms
+  server: 82.38.31.184
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1435ms
+  server: 82.38.31.35
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: '🇬🇧 英国 · 1435ms #2'
+  server: 82.38.31.46
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 英国 · 1441ms
+  server: 82.38.31.181
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1442ms
+  server: 82.38.31.184
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 1445ms
+  server: 82.38.31.187
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸 美国 · 1447ms
+  port: 443
+  server: 137.175.22.52
+  skip-cert-verify: true
+  sni: 137.175.22.52
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 1448ms
+  server: 82.38.31.213
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 · 1454ms
+  server: 47.245.170.82
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1455ms
+  server: 82.38.31.66
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1458ms
+  server: 82.38.31.62
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1460ms
+  server: 82.38.31.203
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1461ms
+  server: 178.83.185.156
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1469ms
+  server: 82.38.31.194
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1478ms
+  port: 443
+  server: 137.175.22.16
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 1489ms
   server: 82.38.31.200
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -2378,7 +1368,81 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 荷兰 · 2694ms
+- name: 🇺🇸 美国 · 1492ms
+  port: 443
+  server: 137.175.22.96
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1499ms
+  password: 'null'
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1500ms
+  port: 443
+  server: 137.175.22.84
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 1501ms
+  server: 136.148.83.69
+  port: 443
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- type: ss
+  name: 🇬🇧 英国 · 1502ms
+  server: 82.38.31.208
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1506ms
+  server: 82.38.31.211
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1511ms
+  server: 82.38.31.180
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1512ms
+  server: 82.38.31.204
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 · 1519ms
   server: 196.245.52.183
   port: 443
   type: vless
@@ -2394,59 +1458,37 @@ proxies:
     path: /d20896a4ce30
     host: e60833x.nl7.h1clayd.click
   udp: true
-- name: 美国 · 2714ms
+- type: vless
+  name: 🇳🇱 荷兰 · 1526ms
+  server: 130.78.30.147
   port: 443
-  server: fan.365747.xyz
-  skip-cert-verify: true
-  sni: fan.365747.xyz
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
   udp: true
-  x-toolall-mihomo: true
-- name: 英国 · 2738ms
-  server: 82.38.31.187
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 英国 · 2765ms
-  server: 82.38.31.186
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 美国 · 2793ms
-  port: 443
-  server: 137.175.22.56
-  skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-  name: 荷兰 · 2837ms
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  server: 196.245.52.183
-  servername: 15b171g.nl7.h1clayd.click
+  servername: 105ky37.virtual-network.lol
+  sni: 105ky37.virtual-network.lol
   skip-cert-verify: false
-  sni: 15b171g.nl7.h1clayd.click
-  tls: true
-  type: vless
+- type: vless
+  name: 🇳🇱 荷兰 · 1529ms
+  server: 94.183.164.176
+  port: 443
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
   udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- name: 以色列 · 2839ms
+  tls: true
+  servername: optim.tildacdn.pub
+  sni: optim.tildacdn.pub
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _KeOS5u_irk1547CMVB3RdwQzz1SzrQZk-IV-btF7TU
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ebl
+- name: 🇫🇷 法国 · 1580ms
   password: None
   port: 443
-  server: 62.90.77.30
+  server: 84.235.228.156
   skip-cert-verify: true
   sub_tag: K001-260618
   tls: true
@@ -2454,15 +1496,490 @@ proxies:
   udp: true
   username: ''
   x-toolall-mihomo: true
-- name: 美国 · 2975ms
+- client-fingerprint: qq
+  name: 🌐 未知地区 · 1584ms
+  port: 443
+  server: 136.148.83.69
+  servername: szqbx-ru-77dc.my-fade.cloud
+  tls: true
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+- name: 🇫🇷 法国 · 1590ms
+  port: 443
+  server: 103.82.101.43
+  skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1595ms
+  password: None
+  port: 443
+  server: 193.233.75.115
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1609ms
+  port: 443
+  server: 51.158.243.91
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1624ms
+  password: ''
+  port: 443
+  server: 149.36.51.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1630ms
+  port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+- type: trojan
+  name: 🇺🇸 美国 · 1641ms
+  server: 169.197.140.245
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: false
+- name: 🇦🇹 奥地利 · 1642ms
+  port: 443
+  server: 146.70.244.2
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1645ms
+  password: None
+  port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: '🇺🇸 美国 · 1645ms #2'
+  port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪 德国 · 1656ms
+  password: 'null'
+  port: 443
+  server: 193.233.75.115
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1656ms
+  port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 1658ms
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: vmess
+  name: 🇺🇸 美国 · 1664ms
+  server: 104.18.42.163
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇵🇱 波兰 · 1668ms
+  password: None
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1671ms
+  port: 443
+  server: 38.247.141.135
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1673ms
+  port: 443
+  server: 12.221.146.147
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: vmess
+  name: 🇺🇸 美国 · 1674ms
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇵🇱 波兰 · 1677ms
+  password: 'null'
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇵🇱 波兰 · 1679ms
+  port: 443
+  server: 151.115.54.133
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1693ms
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp1-cdn-route.couldflare-cdn.com
+  sni: usgp1-cdn-route.couldflare-cdn.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  x-toolall-mihomo: true
+- client-fingerprint: qq
+  name: 🌐 未知地区 · 1694ms
+  port: 443
+  server: 136.148.83.69
+  servername: szqbx-ru-77dc.my-fade.cloud
+  tls: true
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 1704ms
+  server: 82.38.31.193
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- client-fingerprint: qq
+  name: 🇬🇧 英国 · 1707ms
+  network: tcp
+  port: 443
+  server: 136.148.83.69
+  servername: szqbx-ru-77dc.my-fade.cloud
+  tls: true
+  type: vless
+  udp: true
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 · 1713ms
+  port: 443
+  server: 152.233.20.206
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1715ms
+  password: None
+  port: 443
+  server: 12.202.180.118
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇨🇦 加拿大 · 1716ms
+  server: 216.152.147.93
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+- name: 🌐 未知地区 · 1717ms
+  port: 443
+  server: 89.124.11.9
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1721ms
+  server: 185.220.223.78
+  port: 443
+  type: vless
+  uuid: 70f1696c-8b82-4614-9c1e-8ec21201684d
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: wEJIqlLqor9Z_LMHvcsXh5FSoKMz3NbbcORwPDBgbhw
+    short-id: 5a8e1a04f3d92b67
+  servername: lv.meltun.org
+  client-fingerprint: safari
+  network: tcp
+  udp: true
+- name: 🇦🇪 阿联酋 · 1729ms
+  port: 443
+  server: 149.88.96.12
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1729ms
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1732ms
+  server: 193.108.119.15
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🌐 未知地区 · 1733ms
+  port: 443
+  server: 185.219.159.15
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- type: vmess
+  name: 🇫🇷 法国 · 1733ms
+  server: 145.239.55.210
+  port: 80
+  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  servername: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  sni: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🌐 未知地区 · 1736ms
+  port: 443
+  server: 89.124.11.9
+  skip-cert-verify: true
+  tls: true
+  type: http
+- type: ss
+  name: 🇬🇧 英国 · 1736ms
+  server: 82.38.31.39
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇬🇧 英国 · 1737ms
+  server: 82.38.31.191
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇳🇱 荷兰 · 1737ms
+  server: 193.29.139.212
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🌐 未知地区 · 1740ms
+  password: 'null'
+  port: 443
+  server: 89.124.11.9
+  skip-cert-verify: true
+  sni: 89.124.11.9
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1747ms
+  password: None
+  port: 443
+  server: 149.22.86.1
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1748ms
+  port: 443
+  server: 176.94.74.21
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1754ms
   password: 'null'
   port: 443
   server: fan.365747.xyz
+  skip-cert-verify: true
   sni: fan.365747.xyz
   tls: true
   type: http
   username: 'null'
-- name: 美国 · 3004ms
+- name: 🌐 未知地区 · 1756ms
+  password: None
+  port: 443
+  server: 87.120.103.226
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1759ms
+  password: ''
+  port: 443
+  server: 149.22.85.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇩🇪 德国 · 1760ms
+  server: 47.245.173.25
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 1760ms
+  server: 82.38.31.156
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 1789ms
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1799ms
+  password: None
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1800ms
+  port: 443
+  server: 162.217.114.50
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1805ms
+  port: 443
+  server: 91.92.250.33
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1810ms
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸 美国 · 1813ms
   port: 443
   server: 137.175.22.40
   skip-cert-verify: true
@@ -2471,17 +1988,855 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 美国 · 3031ms
+- name: 🌐 未知地区 · 1818ms
   port: 443
-  server: 137.175.22.52
+  server: 185.216.35.66
   skip-cert-verify: true
-  sni: 137.175.22.52
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1823ms
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sni: 149.34.248.65
+  tls: true
+  type: http
+- name: 🇺🇸 美国 · 1825ms
+  port: 443
+  server: 38.28.193.1
+  skip-cert-verify: true
+  sni: 38.28.193.1
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 荷兰 · 3044ms
+- name: 🇺🇸 美国 · 1827ms
+  password: 'null'
+  port: 443
+  server: 38.28.193.188
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇫🇷 法国 · 1827ms
+  server: 145.239.55.210
+  port: 80
+  type: vmess
+  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇳🇱 荷兰 · 1842ms
+  password: 'null'
+  port: 443
+  server: 103.97.88.154
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: 🌐 未知地区 · 1845ms
+  port: 443
+  server: 185.225.28.50
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1848ms
+  password: 'null'
+  port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1853ms
+  port: 443
+  server: fan.226278.xyz
+  tls: true
+  type: http
+- name: 🇬🇧 英国 · 1854ms
+  type: http
+  server: 217.92.132.233
+  port: 443
+  tls: true
+  sni: 217.92.132.233
+  skip-cert-verify: true
+- name: 🇺🇸 美国 · 1854ms
+  port: 443
+  server: fan.226278.xyz
+  sni: fan.226278.xyz
+  sub_tag: Z001-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1856ms
+  port: 443
+  server: 185.246.153.42
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-3791fb4df2db250b.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1869ms
+  port: 443
+  server: 185.140.209.235
+  skip-cert-verify: true
+  sni: 482c8436a1f7c908b48a1757abb5dd79-ce85c45206570905.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1887ms
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 167.172.172.190
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: testuser1
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 1895ms
+  password: 'null'
+  port: 443
+  server: 103.97.88.154
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: vless
+  name: 🇩🇪 德国 · 1900ms
+  server: 88.216.70.125
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
+  servername: o685y.save-node.com
+  sni: o685y.save-node.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+- name: 🇩🇪 德国 · 1902ms
+  port: 443
+  server: 217.92.132.233
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1912ms
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 167.172.172.190
+  skip-cert-verify: true
+  sni: a7acacbe.acsnet.co
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: testuser1
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1917ms
+  port: 443
+  server: 18.200.158.139
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1919ms
+  password: ''
+  port: 443
+  server: 37.203.35.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 1929ms
+  port: 443
+  server: 137.175.22.72
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1940ms
+  server: 64.176.7.205
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 · 1941ms
+  password: None
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1944ms
+  password: None
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1947ms
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 1950ms
+  port: 443
+  server: 34.249.214.108
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- type: vless
+  name: 🇩🇪 德国 · 1959ms
+  server: o685y.save-node.com
+  port: 443
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  udp: true
+  tls: true
+  servername: o685y.save-node.com
+  sni: o685y.save-node.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+- name: 🇧🇷 巴西 · 1968ms
+  server: 216.238.104.154
+  port: 443
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 · 1968ms
+  server: 8.220.81.25
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇫🇷 法国 · 1973ms
+  port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 1974ms
+  password: 'null'
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: vmess
+  name: 🇫🇷 法国 · 2025ms
+  server: 54.37.131.126
+  port: 80
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  servername: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  sni: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🌐 未知地区 · 2026ms
+  password: None
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: '🌐 未知地区 · 2026ms #2'
+  port: 443
+  server: 185.219.159.15
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇮🇹 意大利 · 2033ms
+  port: 443
+  server: 109.116.41.154
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 2036ms
+  password: 'null'
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🌐 未知地区 · 2043ms
+  port: 443
+  server: 185.219.159.15
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+  name: 🇳🇱 荷兰 · 2048ms
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  server: 196.196.148.63
+  servername: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 2049ms
+  server: 82.38.31.186
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 2055ms
+  server: 82.38.31.207
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+  name: 🇳🇱 荷兰 · 2057ms
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  server: 196.196.148.63
+  servername: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  sni: 717252g.nl8.h1clayd.click
+  tls: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 2060ms
+  password: None
+  port: 443
+  server: 185.219.159.16
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸 美国 · 2066ms
+  port: 443
+  server: 96.5.129.85
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 2071ms
+  password: None
+  port: 443
+  server: 195.54.178.210
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 2089ms
+  port: 443
+  server: 137.175.22.85
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 2113ms
+  port: 443
+  server: 24.225.10.211
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- type: ss
+  name: 🇬🇧 英国 · 2119ms
+  server: 82.38.31.190
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 2135ms
+  port: 443
+  server: 162.244.227.36
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇨🇦 加拿大 · 2145ms
+  port: 443
+  server: 142.44.210.129
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 2154ms
+  password: None
+  port: 443
+  server: 162.244.227.36
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 2158ms
+  server: 82.38.31.66
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- type: vmess
+  name: 🌐 未知地区 · 2192ms
+  server: 172.64.145.93
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  cipher: auto
+  alterId: 0
+  tls: true
+  servername: guanwang.awsno.com
+  sni: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇨🇭 瑞士 · 2196ms
+  password: None
+  port: 443
+  server: 31.7.62.50
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 2236ms
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 82.196.9.7
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: testuser1
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 2244ms
+  port: 443
+  server: 89.150.35.94
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 2255ms
+  port: 443
+  server: 137.175.22.45
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇫🇷 法国 · 2256ms
+  password: 'null'
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: trojan
+  name: 🇺🇸 美国 · 2262ms
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: blog.browseseniorrolesandenhanceyourcareertoday.com
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 · 2265ms
+  password: 'null'
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: vmess
+  name: 🌐 未知地区 · 2274ms
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vmess/
+- client-fingerprint: chrome
+  name: 🇫🇷 法国 · 2305ms
+  network: ws
+  port: 443
+  server: notified-rendered-moore-consideration.trycloudflare.com
+  servername: notified-rendered-moore-consideration.trycloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11111111-2222-3333-4444-555555555555
+  ws-opts:
+    headers:
+      Host: notified-rendered-moore-consideration.trycloudflare.com
+    path: /tg-jiedianxielou
+- name: 🇸🇬 新加坡 · 2314ms
+  port: 443
+  server: 154.26.139.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇧🇷 巴西 · 2317ms
+  port: 443
+  server: 134.65.17.77
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇮🇱 以色列 · 2332ms
+  password: 'null'
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: trojan
+  name: 🇺🇸 美国 · 2332ms
+  server: 66.163.112.76
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  servername: api.unlockyourfuturefindyourperfectcareer.com
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 · 2340ms
+  server: 193.29.139.147
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇮🇹 意大利 · 2355ms
+  password: None
+  port: 443
+  server: 93.42.177.250
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 2372ms
+  server: 45.43.153.33
+  port: 443
+  type: vless
+  uuid: d6752c6b-80ae-4a91-b446-bb330f7f8177
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
+    short-id: 88a13cf2655c
+  servername: www.foxsports.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- type: vless
+  name: 🇳🇱 荷兰 · 2433ms
+  server: 196.196.148.63
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  servername: 717252g.nl8.h1clayd.click
+  sni: 717252g.nl8.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: 🇬🇧 英国 · 2450ms
+  server: 82.38.31.214
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 2455ms
+  server: 82.38.31.157
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸 美国 · 2463ms
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 107.151.238.27
+  sni: 6b97ee1b.acsnet.co
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: testuser1
+  x-toolall-mihomo: true
+- name: 🇬🇧 英国 · 2489ms
+  server: 82.38.31.199
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 英国 · 2542ms
+  server: 82.38.31.194
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: ss
+  name: 🇬🇧 英国 · 2619ms
+  server: 82.38.31.182
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇬🇧 英国 · 2623ms
+  server: 82.38.31.199
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇩🇪 德国 · 2669ms
+  server: 8.211.57.86
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- name: 🌐 未知地区 · 2777ms
+  password: None
+  port: 443
+  server: 87.120.103.242
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇮🇩 印度尼西亚 · 2842ms
+  password: 'null'
+  port: 443
+  server: 178.248.73.58
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- type: vmess
+  name: 🇯🇵 日本 · 2855ms
+  server: 168.138.43.75
+  port: 80
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇬🇧 英国 · 2869ms
+  server: 82.38.31.206
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- type: vless
+  name: 🇳🇱 荷兰 · 2873ms
+  server: 04535dt.us8.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  servername: 04535dt.us8.h1clayd.click
+  sni: 04535dt.us8.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: ios
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 德国 · 2913ms
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.167.157
+  type: ss
+  udp: true
+- name: 🇮🇩 印度尼西亚 · 2922ms
+  password: RRWtX6XP
+  port: 62000
+  server: 203.84.138.59
+  sub_tag: R002-260618
+  type: socks5
+  udp: true
+  username: 9tcjLp2W
+  x-toolall-mihomo: true
+- name: 🇮🇩 印度尼西亚 · 2941ms
+  password: 4j4q5adbni
+  port: 62000
+  server: 198.87.103.5
+  type: socks5
+  username: u_f7c7852
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 美国 · 3012ms
+  network: tcp
+  port: 8080
+  reality-opts:
+    public-key: hp5yxgJWnnxhXB-tnQye5RbC1_JPtUKrBHPgiQP0Pl4
+    short-id: 1623547890abcdef
+  server: 186.241.72.210
+  servername: images.apple.com
+  tls: true
+  type: vless
+  uuid: 6aaf9c9e-1bb2-4be6-91a7-945a261f7052
+  x-toolall-mihomo: true
+- name: 🇳🇱 荷兰 · 3021ms
   server: 196.196.148.63
   port: 443
   type: vless
@@ -2497,27 +2852,26 @@ proxies:
     grpc-mode: gun
     grpc-service-name: 204adda7e3da
   udp: true
-- name: 美国 · 3050ms
+- name: '🇳🇱 荷兰 · 3021ms #2'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.127.225
+  sni: cdn.indyourperfectremotetechjobfromthecomfortofhome.com
+  type: trojan
+- name: 🇩🇪 德国 · 3146ms
   password: 'null'
   port: 443
-  server: fan.365747.xyz
+  server: 213.109.163.119
   skip-cert-verify: true
-  sni: fan.365747.xyz
+  sub_tag: K001-260618
   tls: true
   type: http
-  username: 'null'
-- type: ss
-  name: 英国 · 3050ms
-  server: 82.38.31.218
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
   udp: true
-  tls: false
-  skip-cert-verify: false
+  username: 'null'
+  x-toolall-mihomo: true
 - type: ss
-  name: 英国 · 3074ms
-  server: 82.38.31.206
+  name: 🇳🇱 荷兰 · 3234ms
+  server: 193.29.139.223
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
@@ -2525,7 +2879,7 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: vless
-  name: 荷兰 · 3094ms
+  name: 🇳🇱 荷兰 · 3259ms
   server: 146.103.118.189
   port: 443
   uuid: e5d062f0-7bad-4c80-9417-ae083eef61c1
@@ -2537,259 +2891,330 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- type: vless
-  name: 瑞典 · 3108ms
-  server: 136.148.208.221
+- name: 🇩🇪 德国 · 3335ms
+  password: None
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  sni: 8a2e72t.nl20.h1clayd.shop
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-- type: vless
-  name: 德国 · 3164ms
-  server: 4935e4t.de25.h1clayd.click
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 4935e4t.de25.h1clayd.click
-  sni: 4935e4t.de25.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-  name: 荷兰 · 3197ms
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  server: 196.196.148.63
-  servername: 717252g.nl8.h1clayd.click
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 3207ms
-  server: 82.38.31.204
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-  name: 荷兰 · 3228ms
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  server: 196.196.148.63
-  servername: 717252g.nl8.h1clayd.click
-  skip-cert-verify: false
-  sni: 717252g.nl8.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- type: trojan
-  name: 瑞士 · 3237ms
-  server: 208.69.78.222
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  tls: true
-  servername: yourultimateprofessionalcareerhub.com
-  sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 印度 · 3253ms
-  server: 152.67.8.205
-  port: 80
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  servername: 🇮🇳IN-152.67.8.205-5772 | 0.07MB
-  network: ws
-  ws-opts:
-    path: /
-- client-fingerprint: qq
-  name: 英国 · 3301ms
-  network: tcp
-  port: 443
-  server: 136.148.83.69
-  servername: szqbx-ru-77dc.my-fade.cloud
-  tls: true
-  type: vless
-  udp: true
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  ws-opts:
-    path: /
-- name: 美国 · 3302ms
-  port: 443
-  server: 137.175.22.96
+  server: 213.109.163.119
   skip-cert-verify: true
-  sub_tag: R002-260618
+  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 英国 · 3319ms
-  server: 82.38.31.62
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- type: vmess
-  name: 印度 · 3386ms
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  cipher: auto
-  alterId: 0
+- type: vless
+  name: 🇮🇳 印度 · 3362ms
+  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  port: 443
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   udp: true
-  tls: false
+  tls: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  sni: xray-dmr3b3hy-calm-maple-7.cloady.io
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-- name: 美国 · 3441ms
-  port: 443
-  server: 137.175.22.16
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 3482ms
-  server: 82.38.31.48
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 3483ms
-  server: 82.38.31.203
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 荷兰 · 3523ms
-  server: 04535dt.us8.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  servername: 04535dt.us8.h1clayd.click
-  sni: 04535dt.us8.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: ios
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: 美国 · 3530ms
-  port: 443
-  server: 137.175.22.84
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 3534ms
-  server: 82.38.31.215
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 未知地区 · 3614ms
-  server: 196.196.148.76
+    path: /0175469f14317d82
+- name: 🇬🇧 英国 · 3389ms
+  type: vless
+  server: 196.196.149.81
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  sni: 8a2e72t.nl20.h1clayd.shop
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-- name: 英国 · 3661ms
-  server: 82.38.31.176
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 英国 · 3671ms
-  server: 82.38.31.35
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 瑞士 · 3678ms
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.33
-  sni: courses.yourultimateprofessionalcareerhub.com
-  type: trojan
-- type: vless
-  name: 未知地区 · 3685ms
-  server: 196.199.122.2
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  udp: true
   tls: true
   servername: 7aa271t.es1.h1clayd.click
-  sni: 7aa271t.es1.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  skip-cert-verify: true
+  client-fingerprint: firefox
   reality-opts:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
+- name: 🇩🇪 德国 · 3472ms
+  port: 443
+  server: 185.44.107.166
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🌐 未知地区 · 3484ms
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  server: pl.galacticworld.online
+  servername: pl.galacticworld.online
+  tls: true
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 3488ms
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸 美国 · 3509ms
+  type: http
+  server: 137.175.22.40
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: 🇮🇳 印度 · 3526ms
+  network: ws
+  port: 443
+  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  tls: true
+  type: vless
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  ws-opts:
+    headers:
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+    path: /0175469f14317d82
+  x-toolall-mihomo: true
+- name: 🌐 未知地区 · 3627ms
+  password: None
+  port: 443
+  server: 213.207.130.34
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 德国 · 3633ms
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.143.251
+  type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3726ms
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.80
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3738ms
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.199.122.2
+  servername: 7aa271t.es1.h1clayd.click
+  skip-cert-verify: false
+  sni: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3758ms
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.81
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3773ms
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.81
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3774ms
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.199.122.2
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3784ms
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.199.122.2
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3789ms
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.80
+  servername: 7aa271t.es1.h1clayd.click
+  skip-cert-verify: false
+  sni: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3804ms
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.199.122.2
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- name: 🇮🇱 以色列 · 3860ms
+  password: None
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+  x-toolall-mihomo: true
+- name: 🇮🇱 以色列 · 3884ms
+  port: 443
+  server: 62.90.77.30
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 3959ms
+  network: tcp
+  packet-encoding: xudp
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.81
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+  name: 🇺🇸 美国 · 3966ms
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  server: 162.35.101.177
+  servername: 0592efg.us8.h1clayd.click
+  tls: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  x-toolall-mihomo: true
+- name: 🇧🇷 巴西 · 4036ms
+  password: 0mvrt5jb
+  port: 62000
+  server: 191.7.129.133
+  type: socks5
+  username: uwrgfkwg
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 · 4056ms
+  port: 443
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.196.149.80
+  servername: 7aa271t.es1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  x-toolall-mihomo: true
+- name: 🇩🇪 德国 · 4061ms
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - type: ss
-  name: 英国 · 3694ms
-  server: 82.38.31.208
+  name: 🇳🇱 荷兰 · 4085ms
+  server: 193.29.139.147
   port: 8080
   password: k1dBOmOB4oqi7Ump37a1bQ
   cipher: chacha20-ietf-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+  name: 🇺🇸 美国 · 4113ms
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  server: 48.103.230.81
+  servername: 0592efg.us8.h1clayd.click
+  tls: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  x-toolall-mihomo: true
 - type: vless
-  name: 未知地区 · 3706ms
+  name: 🌐 未知地区 · 4151ms
   server: 196.196.148.85
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
@@ -2803,96 +3228,24 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
 - type: ss
-  name: 英国 · 3715ms
-  server: 82.38.31.214
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 3755ms
-  server: 82.38.31.192
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 荷兰 · 3780ms
+  name: 🇩🇪 德国 · 4159ms
+  server: 47.254.167.157
   port: 443
-  server: 89.150.35.94
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 3799ms
-  server: 82.38.31.217
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: 荷兰 · 3820ms
-  server: 193.29.139.147
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 3877ms
-  server: 82.38.31.180
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 3879ms
-  server: 82.38.31.207
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 美国 · 3914ms
+  name: 🇩🇪 德国 · 4195ms
+  server: 47.254.174.203
   port: 443
-  server: 137.175.22.72
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 3950ms
-  server: 82.38.31.157
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 日本 · 3960ms
-  password: 4FM15SpbYAoy6GIzquvBRjPHsK07aJOT
-  port: 443
-  server: 161.33.45.134
-  skip-cert-verify: true
-  sni: www.apple.com
-  tls: true
-  type: trojan
 - type: vless
-  name: 未知地区 · 3979ms
+  name: 🌐 未知地区 · 4275ms
   server: 196.196.149.80
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
@@ -2906,570 +3259,391 @@ proxies:
   reality-opts:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
-- type: vmess
-  name: 未知地区 · 3990ms
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  cipher: auto
-  alterId: 0
-  udp: true
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vmess/
-- client-fingerprint: firefox
-  name: 荷兰 · 4002ms
-  network: tcp
-  packet-encoding: xudp
-  port: 443
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  server: 196.196.148.85
-  servername: 5d0319t.nl7.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  name: 荷兰 · 4019ms
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  server: 196.196.148.85
-  servername: 5d0319t.nl7.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 4084ms
-  server: 82.38.31.47
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: vless
-  name: 荷兰 · 4202ms
-  server: 8a2e72t.nl20.h1clayd.shop
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  sni: 8a2e72t.nl20.h1clayd.shop
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-- type: ss
-  name: 英国 · 4205ms
-  server: 82.38.31.49
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 英国 · 4206ms
-  server: 82.38.31.66
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-  name: 美国 · 4208ms
-  network: grpc
-  packet-encoding: xudp
-  port: 443
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  server: 13.141.51.2
-  servername: 0592efg.us8.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  name: 荷兰 · 4249ms
-  port: 443
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  server: 196.196.148.85
-  servername: 5d0319t.nl7.h1clayd.click
-  tls: true
-  type: vless
-  udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- client-fingerprint: firefox
-  name: 荷兰 · 4281ms
-  port: 443
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  server: 196.196.148.85
-  servername: 5d0319t.nl7.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- name: 美国 · 4289ms
-  port: 443
-  server: 137.175.22.85
-  skip-cert-verify: true
+- name: 🇧🇷 巴西 · 4287ms
+  password: 0mvrt5jb
+  port: 62000
+  server: 191.7.129.133
   sub_tag: R002-260618
-  tls: true
-  type: http
+  type: socks5
   udp: true
+  username: uwrgfkwg
   x-toolall-mihomo: true
-- type: trojan
-  name: 美国 · 4312ms
-  server: 66.163.112.31
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-  tls: true
-  servername: unlockyourfuturefindyourperfectcareer.com
-  sni: unlockyourfuturefindyourperfectcareer.com
-  skip-cert-verify: false
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: 99f2107b03f8
-  name: 美国 · 4387ms
+    grpc-service-name: 5b79e8a94241
+  name: 🇳🇱 荷兰 · 4336ms
   network: grpc
   port: 443
   reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  server: 48.103.230.81
-  servername: 0592efg.us8.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- name: 美国 · 4394ms
-  type: vless
-  server: 162.35.101.177
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  servername: 0592efg.us8.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-- client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-  name: 美国 · 4413ms
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  server: 162.35.101.177
-  servername: 0592efg.us8.h1clayd.click
-  tls: true
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  x-toolall-mihomo: true
-- name: '美国 · 4413ms #2'
-  network: ws
-  password: 6-FrR5YsfjfyNp6AIFZgcQ
-  port: 443
-  server: ipfast.kingmna.com
-  skip-cert-verify: true
-  sni: cdn.akamai.steamstatic.com
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
-    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
-- name: 美国 · 4425ms
-  port: 443
-  server: 137.175.22.45
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- type: ss
-  name: 英国 · 4444ms
-  server: 82.38.31.156
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-  udp: true
-  tls: false
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  server: 196.245.52.183
+  servername: 15b171g.nl7.h1clayd.click
   skip-cert-verify: false
-- name: 英国 · 4465ms
-  type: vless
-  server: 196.196.149.81
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
+  sni: 15b171g.nl7.h1clayd.click
   tls: true
-  servername: 7aa271t.es1.h1clayd.click
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
+  type: vless
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  x-toolall-mihomo: true
 proxy-groups:
 - name: 自动测速
   type: url-test
   proxies:
-  - 新加坡 · 591ms
-  - 日本 · 598ms
-  - 未知地区 · 606ms
-  - 日本 · 607ms
-  - 未知地区 · 625ms
-  - 日本 · 629ms
-  - 日本 · 656ms
-  - 日本 · 663ms
-  - 美国 · 694ms
-  - 香港 · 697ms
-  - 美国 · 711ms
-  - 德国 · 719ms
-  - 香港 · 721ms
-  - 美国 · 721ms
-  - 美国 · 732ms
-  - 香港 · 733ms
-  - 美国 · 734ms
-  - 美国 · 735ms
-  - 美国 · 739ms
-  - 美国 · 752ms
-  - 韩国 · 753ms
-  - 日本 · 778ms
-  - 日本 · 817ms
-  - 日本 · 873ms
-  - 越南 · 896ms
-  - 韩国 · 896ms
-  - 韩国 · 905ms
-  - 美国 · 925ms
-  - 越南 · 928ms
-  - 加拿大 · 938ms
-  - 印度尼西亚 · 964ms
-  - 韩国 · 971ms
-  - 美国 · 976ms
-  - 美国 · 979ms
-  - 韩国 · 984ms
-  - 加拿大 · 1004ms
-  - 美国 · 1007ms
-  - 美国 · 1011ms
-  - 荷兰 · 1014ms
-  - 英国 · 1018ms
-  - 美国 · 1022ms
-  - '美国 · 1022ms #2'
-  - 英国 · 1025ms
-  - 荷兰 · 1025ms
-  - 美国 · 1025ms
-  - 荷兰 · 1031ms
-  - 英国 · 1034ms
-  - 美国 · 1040ms
-  - 美国 · 1042ms
-  - 德国 · 1048ms
-  - 英国 · 1050ms
-  - 英国 · 1052ms
-  - 德国 · 1057ms
-  - 英国 · 1065ms
-  - 美国 · 1072ms
-  - 荷兰 · 1077ms
-  - 日本 · 1099ms
-  - 日本 · 1108ms
-  - 美国 · 1112ms
-  - 美国 · 1116ms
-  - 美国 · 1121ms
-  - 澳大利亚 · 1126ms
-  - 未知地区 · 1129ms
-  - 澳大利亚 · 1129ms
-  - 美国 · 1136ms
-  - 美国 · 1139ms
-  - 美国 · 1140ms
-  - 美国 · 1144ms
-  - 澳大利亚 · 1146ms
-  - 日本 · 1148ms
-  - 日本 · 1158ms
-  - 美国 · 1160ms
-  - 荷兰 · 1190ms
-  - 美国 · 1209ms
-  - 新加坡 · 1225ms
-  - 英国 · 1225ms
-  - 美国 · 1226ms
-  - 日本 · 1243ms
-  - 美国 · 1264ms
-  - 南非 · 1265ms
-  - 南非 · 1266ms
-  - 德国 · 1272ms
-  - 未知地区 · 1278ms
-  - 英国 · 1300ms
-  - 未知地区 · 1304ms
-  - 未知地区 · 1305ms
-  - 英国 · 1314ms
-  - 未知地区 · 1316ms
-  - 英国 · 1332ms
-  - 德国 · 1335ms
-  - 德国 · 1337ms
-  - 法国 · 1346ms
-  - 德国 · 1349ms
-  - 阿联酋 · 1350ms
-  - 德国 · 1353ms
-  - 英国 · 1364ms
-  - 加拿大 · 1388ms
-  - 美国 · 1403ms
-  - 美国 · 1406ms
-  - 德国 · 1413ms
-  - 未知地区 · 1425ms
-  - 印度尼西亚 · 1447ms
-  - 印度 · 1462ms
-  - 美国 · 1478ms
-  - 德国 · 1481ms
-  - 法国 · 1483ms
-  - 荷兰 · 1491ms
-  - 美国 · 1522ms
-  - 荷兰 · 1541ms
-  - 比利时 · 1546ms
-  - 未知地区 · 1550ms
-  - 英国 · 1552ms
-  - 荷兰 · 1555ms
-  - 法国 · 1567ms
-  - 法国 · 1568ms
-  - 比利时 · 1576ms
-  - 西班牙 · 1579ms
-  - 德国 · 1582ms
-  - 比利时 · 1589ms
-  - 奥地利 · 1604ms
-  - 未知地区 · 1609ms
-  - 荷兰 · 1613ms
-  - 奥地利 · 1614ms
-  - 法国 · 1629ms
-  - 英国 · 1629ms
-  - 美国 · 1639ms
-  - 美国 · 1648ms
-  - 荷兰 · 1649ms
-  - 荷兰 · 1657ms
-  - 新加坡 · 1660ms
-  - 美国 · 1662ms
-  - 英国 · 1663ms
-  - 美国 · 1664ms
-  - 德国 · 1668ms
-  - 奥地利 · 1668ms
-  - 美国 · 1671ms
-  - 美国 · 1672ms
-  - 德国 · 1672ms
-  - 波兰 · 1672ms
-  - 德国 · 1676ms
-  - 阿联酋 · 1677ms
-  - 美国 · 1681ms
-  - 美国 · 1683ms
-  - 波兰 · 1685ms
-  - 法国 · 1691ms
-  - 未知地区 · 1693ms
-  - 美国 · 1697ms
-  - 新加坡 · 1700ms
-  - 美国 · 1702ms
-  - 荷兰 · 1702ms
-  - 波兰 · 1704ms
-  - 德国 · 1706ms
-  - 美国 · 1707ms
-  - 未知地区 · 1714ms
-  - 未知地区 · 1715ms
-  - 美国 · 1715ms
-  - 新加坡 · 1719ms
-  - 德国 · 1721ms
-  - 未知地区 · 1722ms
-  - 未知地区 · 1723ms
-  - 阿联酋 · 1730ms
-  - 未知地区 · 1740ms
-  - 未知地区 · 1748ms
-  - 未知地区 · 1754ms
-  - 未知地区 · 1755ms
-  - 未知地区 · 1766ms
-  - 英国 · 1777ms
-  - 美国 · 1790ms
-  - 未知地区 · 1795ms
-  - 美国 · 1812ms
-  - 新加坡 · 1812ms
-  - 美国 · 1814ms
-  - 未知地区 · 1818ms
-  - 美国 · 1823ms
-  - 未知地区 · 1828ms
-  - 德国 · 1834ms
-  - 英国 · 1835ms
-  - 荷兰 · 1835ms
-  - 美国 · 1841ms
-  - 美国 · 1850ms
-  - 德国 · 1854ms
-  - 美国 · 1857ms
-  - 未知地区 · 1858ms
-  - 德国 · 1858ms
-  - 荷兰 · 1859ms
-  - 荷兰 · 1863ms
-  - 美国 · 1863ms
-  - 荷兰 · 1867ms
-  - 未知地区 · 1868ms
-  - 未知地区 · 1871ms
-  - 美国 · 1871ms
-  - 荷兰 · 1881ms
-  - 法国 · 1892ms
-  - 德国 · 1894ms
-  - 法国 · 1895ms
-  - 以色列 · 1897ms
-  - 英国 · 1901ms
-  - 以色列 · 1907ms
-  - 德国 · 1913ms
-  - 德国 · 1921ms
-  - 德国 · 1924ms
-  - '德国 · 1924ms #2'
-  - 德国 · 1938ms
-  - 未知地区 · 1941ms
-  - 德国 · 1941ms
-  - 未知地区 · 1944ms
-  - 德国 · 1949ms
-  - 美国 · 1955ms
-  - 法国 · 1957ms
-  - 德国 · 1960ms
-  - 未知地区 · 1960ms
-  - 未知地区 · 1963ms
-  - 美国 · 1966ms
-  - 西班牙 · 1972ms
-  - 未知地区 · 2001ms
-  - 法国 · 2004ms
-  - 未知地区 · 2012ms
-  - 未知地区 · 2028ms
-  - 德国 · 2029ms
-  - 未知地区 · 2030ms
-  - 未知地区 · 2039ms
-  - 未知地区 · 2043ms
-  - 未知地区 · 2051ms
-  - 意大利 · 2068ms
-  - 未知地区 · 2068ms
-  - 未知地区 · 2073ms
-  - 德国 · 2075ms
-  - 英国 · 2078ms
-  - 英国 · 2082ms
-  - 美国 · 2094ms
-  - 英国 · 2098ms
-  - 德国 · 2110ms
-  - 美国 · 2113ms
-  - 美国 · 2136ms
-  - 英国 · 2171ms
-  - 荷兰 · 2176ms
-  - 英国 · 2184ms
-  - 加拿大 · 2193ms
-  - 意大利 · 2195ms
-  - 英国 · 2209ms
-  - '英国 · 2209ms #2'
-  - 未知地区 · 2221ms
-  - 瑞士 · 2225ms
-  - 英国 · 2229ms
-  - 德国 · 2231ms
-  - 加拿大 · 2249ms
-  - 荷兰 · 2338ms
-  - 巴西 · 2362ms
-  - 英国 · 2382ms
-  - 荷兰 · 2418ms
-  - 英国 · 2422ms
-  - 英国 · 2423ms
-  - 英国 · 2426ms
-  - 英国 · 2428ms
-  - 荷兰 · 2478ms
-  - 德国 · 2488ms
-  - 英国 · 2512ms
-  - 美国 · 2525ms
-  - 英国 · 2544ms
-  - 德国 · 2560ms
-  - 英国 · 2664ms
-  - 荷兰 · 2694ms
-  - 美国 · 2714ms
-  - 英国 · 2738ms
-  - 英国 · 2765ms
-  - 美国 · 2793ms
-  - 荷兰 · 2837ms
-  - 以色列 · 2839ms
-  - 美国 · 2975ms
-  - 美国 · 3004ms
-  - 美国 · 3031ms
-  - 荷兰 · 3044ms
-  - 美国 · 3050ms
-  - 英国 · 3050ms
-  - 英国 · 3074ms
-  - 荷兰 · 3094ms
-  - 瑞典 · 3108ms
-  - 德国 · 3164ms
-  - 荷兰 · 3197ms
-  - 英国 · 3207ms
-  - 荷兰 · 3228ms
-  - 瑞士 · 3237ms
-  - 印度 · 3253ms
-  - 英国 · 3301ms
-  - 美国 · 3302ms
-  - 英国 · 3319ms
-  - 印度 · 3386ms
-  - 美国 · 3441ms
-  - 英国 · 3482ms
-  - 英国 · 3483ms
-  - 荷兰 · 3523ms
-  - 美国 · 3530ms
-  - 英国 · 3534ms
-  - 未知地区 · 3614ms
-  - 英国 · 3661ms
-  - 英国 · 3671ms
-  - 瑞士 · 3678ms
-  - 未知地区 · 3685ms
-  - 英国 · 3694ms
-  - 未知地区 · 3706ms
-  - 英国 · 3715ms
-  - 英国 · 3755ms
-  - 荷兰 · 3780ms
-  - 英国 · 3799ms
-  - 荷兰 · 3820ms
-  - 英国 · 3877ms
-  - 英国 · 3879ms
-  - 美国 · 3914ms
-  - 英国 · 3950ms
-  - 日本 · 3960ms
-  - 未知地区 · 3979ms
-  - 未知地区 · 3990ms
-  - 荷兰 · 4002ms
-  - 荷兰 · 4019ms
-  - 英国 · 4084ms
-  - 荷兰 · 4202ms
-  - 英国 · 4205ms
-  - 英国 · 4206ms
-  - 美国 · 4208ms
-  - 荷兰 · 4249ms
-  - 荷兰 · 4281ms
-  - 美国 · 4289ms
-  - 美国 · 4312ms
-  - 美国 · 4387ms
-  - 美国 · 4394ms
-  - 美国 · 4413ms
-  - '美国 · 4413ms #2'
-  - 美国 · 4425ms
-  - 英国 · 4444ms
-  - 英国 · 4465ms
+  - 🇸🇬 新加坡 · 568ms · 0.1MB/s
+  - 🌐 未知地区 · 616ms · 0.2MB/s
+  - 🌐 未知地区 · 632ms
+  - 🇯🇵 日本 · 641ms · 0.2MB/s
+  - 🇯🇵 日本 · 662ms · 0.3MB/s
+  - 🇯🇵 日本 · 664ms · 0.3MB/s
+  - 🇯🇵 日本 · 666ms · 0.2MB/s
+  - 🇺🇸 美国 · 680ms · 0.2MB/s
+  - 🇺🇸 美国 · 681ms · 0.2MB/s
+  - 🇰🇷 韩国 · 683ms · 0.3MB/s
+  - 🇺🇸 美国 · 704ms
+  - 🇩🇪 德国 · 730ms
+  - 🇺🇸 美国 · 735ms
+  - '🇺🇸 美国 · 735ms #2'
+  - 🇺🇸 美国 · 742ms
+  - 🇺🇸 美国 · 745ms
+  - 🇭🇰 香港 · 763ms
+  - 🇺🇸 美国 · 785ms
+  - 🇯🇵 日本 · 814ms
+  - 🇯🇵 日本 · 815ms
+  - 🇯🇵 日本 · 820ms
+  - 🇻🇳 越南 · 903ms
+  - 🇯🇵 日本 · 913ms
+  - 🇮🇩 印度尼西亚 · 934ms
+  - 🇮🇳 印度 · 954ms
+  - 🇻🇳 越南 · 955ms
+  - 🇨🇦 加拿大 · 959ms
+  - 🇨🇦 加拿大 · 967ms
+  - 🇰🇷 韩国 · 967ms
+  - 🇰🇷 韩国 · 983ms
+  - 🇮🇳 印度 · 989ms
+  - 🇺🇸 美国 · 989ms
+  - 🇺🇸 美国 · 995ms
+  - 🇺🇸 美国 · 1005ms
+  - 🇭🇰 香港 · 1007ms
+  - 🇬🇧 英国 · 1020ms
+  - 🇳🇱 荷兰 · 1022ms
+  - 🇭🇰 香港 · 1026ms
+  - 🇳🇱 荷兰 · 1027ms
+  - 🇳🇱 荷兰 · 1028ms
+  - 🇬🇧 英国 · 1029ms
+  - 🇺🇸 美国 · 1029ms
+  - 🇯🇵 日本 · 1034ms
+  - 🇬🇧 英国 · 1040ms
+  - 🇬🇧 英国 · 1042ms
+  - 🇳🇱 荷兰 · 1049ms
+  - 🇯🇵 日本 · 1052ms
+  - 🇬🇧 英国 · 1057ms
+  - '🇬🇧 英国 · 1057ms #2'
+  - 🇬🇧 英国 · 1061ms
+  - 🇬🇧 英国 · 1067ms
+  - 🇺🇸 美国 · 1071ms
+  - 🇯🇵 日本 · 1077ms
+  - 🇩🇪 德国 · 1077ms
+  - 🇺🇸 美国 · 1078ms
+  - 🇺🇸 美国 · 1082ms
+  - 🇺🇸 美国 · 1091ms
+  - 🇺🇸 美国 · 1094ms
+  - 🇸🇬 新加坡 · 1098ms
+  - 🇸🇬 新加坡 · 1106ms
+  - 🇺🇸 美国 · 1108ms
+  - 🇺🇸 美国 · 1113ms
+  - 🇺🇸 美国 · 1135ms
+  - 🇺🇸 美国 · 1136ms
+  - 🌐 未知地区 · 1139ms
+  - 🇺🇸 美国 · 1139ms
+  - 🇦🇺 澳大利亚 · 1143ms
+  - 🇦🇺 澳大利亚 · 1146ms
+  - 🇳🇱 荷兰 · 1153ms
+  - 🇦🇺 澳大利亚 · 1161ms
+  - 🇺🇸 美国 · 1161ms
+  - 🇺🇸 美国 · 1163ms
+  - 🇺🇸 美国 · 1177ms
+  - 🇰🇷 韩国 · 1201ms
+  - 🇨🇦 加拿大 · 1212ms
+  - 🇺🇸 美国 · 1213ms
+  - 🇺🇸 美国 · 1230ms
+  - 🇳🇱 荷兰 · 1248ms
+  - 🇩🇪 德国 · 1252ms
+  - 🇿🇦 南非 · 1268ms
+  - 🇿🇦 南非 · 1277ms
+  - 🇺🇸 美国 · 1289ms
+  - 🇦🇪 阿联酋 · 1291ms
+  - 🌐 未知地区 · 1294ms
+  - 🇳🇱 荷兰 · 1296ms
+  - 🇬🇧 英国 · 1302ms
+  - 🇰🇷 韩国 · 1305ms
+  - 🇬🇧 英国 · 1306ms
+  - 🇬🇧 英国 · 1307ms
+  - 🇬🇧 英国 · 1309ms
+  - 🇸🇬 新加坡 · 1313ms
+  - 🇩🇪 德国 · 1314ms
+  - 🇬🇧 英国 · 1314ms
+  - '🇬🇧 英国 · 1314ms #2'
+  - 🇬🇧 英国 · 1315ms
+  - '🇬🇧 英国 · 1315ms #2'
+  - 🇬🇧 英国 · 1316ms
+  - 🇬🇧 英国 · 1320ms
+  - 🇺🇸 美国 · 1321ms
+  - 🇬🇧 英国 · 1321ms
+  - 🇯🇵 日本 · 1329ms
+  - 🇬🇧 英国 · 1330ms
+  - '🇬🇧 英国 · 1330ms #2'
+  - 🇬🇧 英国 · 1331ms
+  - 🇬🇧 英国 · 1334ms
+  - 🇬🇧 英国 · 1336ms
+  - 🇬🇧 英国 · 1341ms
+  - 🌐 未知地区 · 1343ms
+  - 🇬🇧 英国 · 1343ms
+  - '🇬🇧 英国 · 1343ms #2'
+  - 🇬🇧 英国 · 1344ms
+  - 🇬🇧 英国 · 1346ms
+  - 🇬🇧 英国 · 1347ms
+  - 🇬🇧 英国 · 1350ms
+  - '🇬🇧 英国 · 1350ms #2'
+  - 🇬🇧 英国 · 1351ms
+  - 🇬🇧 英国 · 1352ms
+  - 🇬🇧 英国 · 1358ms
+  - 🇩🇪 德国 · 1360ms
+  - 🇩🇪 德国 · 1361ms
+  - 🇺🇸 美国 · 1361ms
+  - 🇩🇪 德国 · 1366ms
+  - 🇬🇧 英国 · 1370ms
+  - 🇸🇬 新加坡 · 1372ms
+  - 🌐 未知地区 · 1375ms
+  - 🇬🇧 英国 · 1389ms
+  - 🇯🇵 日本 · 1391ms
+  - 🇬🇧 英国 · 1392ms
+  - 🇬🇧 英国 · 1396ms
+  - 🇬🇧 英国 · 1398ms
+  - 🇬🇧 英国 · 1401ms
+  - 🇬🇧 英国 · 1402ms
+  - '🇬🇧 英国 · 1402ms #2'
+  - 🇬🇧 英国 · 1406ms
+  - 🇬🇧 英国 · 1407ms
+  - 🇬🇧 英国 · 1408ms
+  - 🇬🇧 英国 · 1410ms
+  - 🇬🇧 英国 · 1412ms
+  - '🇬🇧 英国 · 1412ms #2'
+  - 🇬🇧 英国 · 1413ms
+  - 🇬🇧 英国 · 1414ms
+  - 🇬🇧 英国 · 1417ms
+  - '🇬🇧 英国 · 1417ms #2'
+  - 🇬🇧 英国 · 1420ms
+  - 🇬🇧 英国 · 1421ms
+  - 🇬🇧 英国 · 1422ms
+  - 🇺🇸 美国 · 1423ms
+  - 🇬🇧 英国 · 1423ms
+  - 🇬🇧 英国 · 1427ms
+  - 🇺🇸 美国 · 1427ms
+  - 🇬🇧 英国 · 1432ms
+  - 🇬🇧 英国 · 1435ms
+  - '🇬🇧 英国 · 1435ms #2'
+  - 🇬🇧 英国 · 1441ms
+  - 🇬🇧 英国 · 1442ms
+  - 🇬🇧 英国 · 1445ms
+  - 🇺🇸 美国 · 1447ms
+  - 🇬🇧 英国 · 1448ms
+  - 🇩🇪 德国 · 1454ms
+  - 🇬🇧 英国 · 1455ms
+  - 🇬🇧 英国 · 1458ms
+  - 🇬🇧 英国 · 1460ms
+  - 🇬🇧 英国 · 1461ms
+  - 🇬🇧 英国 · 1469ms
+  - 🇺🇸 美国 · 1478ms
+  - 🇬🇧 英国 · 1489ms
+  - 🇺🇸 美国 · 1492ms
+  - 🇺🇸 美国 · 1499ms
+  - 🇺🇸 美国 · 1500ms
+  - 🇬🇧 英国 · 1501ms
+  - 🇬🇧 英国 · 1502ms
+  - 🇬🇧 英国 · 1506ms
+  - 🇬🇧 英国 · 1511ms
+  - 🇬🇧 英国 · 1512ms
+  - 🇳🇱 荷兰 · 1519ms
+  - 🇳🇱 荷兰 · 1526ms
+  - 🇳🇱 荷兰 · 1529ms
+  - 🇫🇷 法国 · 1580ms
+  - 🌐 未知地区 · 1584ms
+  - 🇫🇷 法国 · 1590ms
+  - 🇩🇪 德国 · 1595ms
+  - 🇳🇱 荷兰 · 1609ms
+  - 🇳🇱 荷兰 · 1624ms
+  - 🇺🇸 美国 · 1630ms
+  - 🇺🇸 美国 · 1641ms
+  - 🇦🇹 奥地利 · 1642ms
+  - 🇺🇸 美国 · 1645ms
+  - '🇺🇸 美国 · 1645ms #2'
+  - 🇩🇪 德国 · 1656ms
+  - 🇺🇸 美国 · 1656ms
+  - 🇬🇧 英国 · 1658ms
+  - 🇺🇸 美国 · 1664ms
+  - 🇵🇱 波兰 · 1668ms
+  - 🇺🇸 美国 · 1671ms
+  - 🇺🇸 美国 · 1673ms
+  - 🇺🇸 美国 · 1674ms
+  - 🇵🇱 波兰 · 1677ms
+  - 🇵🇱 波兰 · 1679ms
+  - 🇺🇸 美国 · 1693ms
+  - 🌐 未知地区 · 1694ms
+  - 🇬🇧 英国 · 1704ms
+  - 🇬🇧 英国 · 1707ms
+  - 🇩🇪 德国 · 1713ms
+  - 🇺🇸 美国 · 1715ms
+  - 🇨🇦 加拿大 · 1716ms
+  - 🌐 未知地区 · 1717ms
+  - 🌐 未知地区 · 1721ms
+  - 🇦🇪 阿联酋 · 1729ms
+  - 🌐 未知地区 · 1729ms
+  - 🇩🇪 德国 · 1732ms
+  - 🌐 未知地区 · 1733ms
+  - 🇫🇷 法国 · 1733ms
+  - 🌐 未知地区 · 1736ms
+  - 🇬🇧 英国 · 1736ms
+  - 🇬🇧 英国 · 1737ms
+  - 🇳🇱 荷兰 · 1737ms
+  - 🌐 未知地区 · 1740ms
+  - 🇩🇪 德国 · 1747ms
+  - 🇩🇪 德国 · 1748ms
+  - 🇺🇸 美国 · 1754ms
+  - 🌐 未知地区 · 1756ms
+  - 🌐 未知地区 · 1759ms
+  - 🇩🇪 德国 · 1760ms
+  - 🇬🇧 英国 · 1760ms
+  - 🇺🇸 美国 · 1789ms
+  - 🌐 未知地区 · 1799ms
+  - 🇺🇸 美国 · 1800ms
+  - 🌐 未知地区 · 1805ms
+  - 🌐 未知地区 · 1810ms
+  - 🇺🇸 美国 · 1813ms
+  - 🌐 未知地区 · 1818ms
+  - 🇺🇸 美国 · 1823ms
+  - 🇺🇸 美国 · 1825ms
+  - 🇺🇸 美国 · 1827ms
+  - 🇫🇷 法国 · 1827ms
+  - 🇳🇱 荷兰 · 1842ms
+  - 🌐 未知地区 · 1845ms
+  - 🇳🇱 荷兰 · 1848ms
+  - 🇺🇸 美国 · 1853ms
+  - 🇬🇧 英国 · 1854ms
+  - 🇺🇸 美国 · 1854ms
+  - 🇳🇱 荷兰 · 1856ms
+  - 🇳🇱 荷兰 · 1869ms
+  - 🇩🇪 德国 · 1887ms
+  - 🇳🇱 荷兰 · 1895ms
+  - 🇩🇪 德国 · 1900ms
+  - 🇩🇪 德国 · 1902ms
+  - 🇩🇪 德国 · 1912ms
+  - 🌐 未知地区 · 1917ms
+  - 🇩🇪 德国 · 1919ms
+  - 🇺🇸 美国 · 1929ms
+  - 🌐 未知地区 · 1940ms
+  - 🇫🇷 法国 · 1941ms
+  - 🇩🇪 德国 · 1944ms
+  - 🇩🇪 德国 · 1947ms
+  - 🌐 未知地区 · 1950ms
+  - 🇩🇪 德国 · 1959ms
+  - 🇧🇷 巴西 · 1968ms
+  - 🇩🇪 德国 · 1968ms
+  - 🇫🇷 法国 · 1973ms
+  - 🇩🇪 德国 · 1974ms
+  - 🇫🇷 法国 · 2025ms
+  - 🌐 未知地区 · 2026ms
+  - '🌐 未知地区 · 2026ms #2'
+  - 🇮🇹 意大利 · 2033ms
+  - 🇩🇪 德国 · 2036ms
+  - 🌐 未知地区 · 2043ms
+  - 🇳🇱 荷兰 · 2048ms
+  - 🇬🇧 英国 · 2049ms
+  - 🇬🇧 英国 · 2055ms
+  - 🇳🇱 荷兰 · 2057ms
+  - 🌐 未知地区 · 2060ms
+  - 🇺🇸 美国 · 2066ms
+  - 🌐 未知地区 · 2071ms
+  - 🇺🇸 美国 · 2089ms
+  - 🇺🇸 美国 · 2113ms
+  - 🇬🇧 英国 · 2119ms
+  - 🇺🇸 美国 · 2135ms
+  - 🇨🇦 加拿大 · 2145ms
+  - 🇺🇸 美国 · 2154ms
+  - 🇬🇧 英国 · 2158ms
+  - 🌐 未知地区 · 2192ms
+  - 🇨🇭 瑞士 · 2196ms
+  - 🇳🇱 荷兰 · 2236ms
+  - 🇳🇱 荷兰 · 2244ms
+  - 🇺🇸 美国 · 2255ms
+  - 🇫🇷 法国 · 2256ms
+  - 🇺🇸 美国 · 2262ms
+  - 🇩🇪 德国 · 2265ms
+  - 🌐 未知地区 · 2274ms
+  - 🇫🇷 法国 · 2305ms
+  - 🇸🇬 新加坡 · 2314ms
+  - 🇧🇷 巴西 · 2317ms
+  - 🇮🇱 以色列 · 2332ms
+  - 🇺🇸 美国 · 2332ms
+  - 🇳🇱 荷兰 · 2340ms
+  - 🇮🇹 意大利 · 2355ms
+  - 🇳🇱 荷兰 · 2372ms
+  - 🇳🇱 荷兰 · 2433ms
+  - 🇬🇧 英国 · 2450ms
+  - 🇬🇧 英国 · 2455ms
+  - 🇺🇸 美国 · 2463ms
+  - 🇬🇧 英国 · 2489ms
+  - 🇬🇧 英国 · 2542ms
+  - 🇬🇧 英国 · 2619ms
+  - 🇬🇧 英国 · 2623ms
+  - 🇩🇪 德国 · 2669ms
+  - 🌐 未知地区 · 2777ms
+  - 🇮🇩 印度尼西亚 · 2842ms
+  - 🇯🇵 日本 · 2855ms
+  - 🇬🇧 英国 · 2869ms
+  - 🇳🇱 荷兰 · 2873ms
+  - 🇩🇪 德国 · 2913ms
+  - 🇮🇩 印度尼西亚 · 2922ms
+  - 🇮🇩 印度尼西亚 · 2941ms
+  - 🇺🇸 美国 · 3012ms
+  - 🇳🇱 荷兰 · 3021ms
+  - '🇳🇱 荷兰 · 3021ms #2'
+  - 🇩🇪 德国 · 3146ms
+  - 🇳🇱 荷兰 · 3234ms
+  - 🇳🇱 荷兰 · 3259ms
+  - 🇩🇪 德国 · 3335ms
+  - 🇮🇳 印度 · 3362ms
+  - 🇬🇧 英国 · 3389ms
+  - 🇩🇪 德国 · 3472ms
+  - 🌐 未知地区 · 3484ms
+  - 🇩🇪 德国 · 3488ms
+  - 🇺🇸 美国 · 3509ms
+  - 🇮🇳 印度 · 3526ms
+  - 🌐 未知地区 · 3627ms
+  - 🇩🇪 德国 · 3633ms
+  - 🇪🇸 西班牙 · 3726ms
+  - 🇪🇸 西班牙 · 3738ms
+  - 🇪🇸 西班牙 · 3758ms
+  - 🇪🇸 西班牙 · 3773ms
+  - 🇪🇸 西班牙 · 3774ms
+  - 🇪🇸 西班牙 · 3784ms
+  - 🇪🇸 西班牙 · 3789ms
+  - 🇪🇸 西班牙 · 3804ms
+  - 🇮🇱 以色列 · 3860ms
+  - 🇮🇱 以色列 · 3884ms
+  - 🇪🇸 西班牙 · 3959ms
+  - 🇺🇸 美国 · 3966ms
+  - 🇧🇷 巴西 · 4036ms
+  - 🇪🇸 西班牙 · 4056ms
+  - 🇩🇪 德国 · 4061ms
+  - 🇳🇱 荷兰 · 4085ms
+  - 🇺🇸 美国 · 4113ms
+  - 🌐 未知地区 · 4151ms
+  - 🇩🇪 德国 · 4159ms
+  - 🇩🇪 德国 · 4195ms
+  - 🌐 未知地区 · 4275ms
+  - 🇧🇷 巴西 · 4287ms
+  - 🇳🇱 荷兰 · 4336ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 80
@@ -3478,336 +3652,360 @@ proxy-groups:
   proxies:
   - 自动测速
   - DIRECT
-  - 新加坡 · 591ms
-  - 日本 · 598ms
-  - 未知地区 · 606ms
-  - 日本 · 607ms
-  - 未知地区 · 625ms
-  - 日本 · 629ms
-  - 日本 · 656ms
-  - 日本 · 663ms
-  - 美国 · 694ms
-  - 香港 · 697ms
-  - 美国 · 711ms
-  - 德国 · 719ms
-  - 香港 · 721ms
-  - 美国 · 721ms
-  - 美国 · 732ms
-  - 香港 · 733ms
-  - 美国 · 734ms
-  - 美国 · 735ms
-  - 美国 · 739ms
-  - 美国 · 752ms
-  - 韩国 · 753ms
-  - 日本 · 778ms
-  - 日本 · 817ms
-  - 日本 · 873ms
-  - 越南 · 896ms
-  - 韩国 · 896ms
-  - 韩国 · 905ms
-  - 美国 · 925ms
-  - 越南 · 928ms
-  - 加拿大 · 938ms
-  - 印度尼西亚 · 964ms
-  - 韩国 · 971ms
-  - 美国 · 976ms
-  - 美国 · 979ms
-  - 韩国 · 984ms
-  - 加拿大 · 1004ms
-  - 美国 · 1007ms
-  - 美国 · 1011ms
-  - 荷兰 · 1014ms
-  - 英国 · 1018ms
-  - 美国 · 1022ms
-  - '美国 · 1022ms #2'
-  - 英国 · 1025ms
-  - 荷兰 · 1025ms
-  - 美国 · 1025ms
-  - 荷兰 · 1031ms
-  - 英国 · 1034ms
-  - 美国 · 1040ms
-  - 美国 · 1042ms
-  - 德国 · 1048ms
-  - 英国 · 1050ms
-  - 英国 · 1052ms
-  - 德国 · 1057ms
-  - 英国 · 1065ms
-  - 美国 · 1072ms
-  - 荷兰 · 1077ms
-  - 日本 · 1099ms
-  - 日本 · 1108ms
-  - 美国 · 1112ms
-  - 美国 · 1116ms
-  - 美国 · 1121ms
-  - 澳大利亚 · 1126ms
-  - 未知地区 · 1129ms
-  - 澳大利亚 · 1129ms
-  - 美国 · 1136ms
-  - 美国 · 1139ms
-  - 美国 · 1140ms
-  - 美国 · 1144ms
-  - 澳大利亚 · 1146ms
-  - 日本 · 1148ms
-  - 日本 · 1158ms
-  - 美国 · 1160ms
-  - 荷兰 · 1190ms
-  - 美国 · 1209ms
-  - 新加坡 · 1225ms
-  - 英国 · 1225ms
-  - 美国 · 1226ms
-  - 日本 · 1243ms
-  - 美国 · 1264ms
-  - 南非 · 1265ms
-  - 南非 · 1266ms
-  - 德国 · 1272ms
-  - 未知地区 · 1278ms
-  - 英国 · 1300ms
-  - 未知地区 · 1304ms
-  - 未知地区 · 1305ms
-  - 英国 · 1314ms
-  - 未知地区 · 1316ms
-  - 英国 · 1332ms
-  - 德国 · 1335ms
-  - 德国 · 1337ms
-  - 法国 · 1346ms
-  - 德国 · 1349ms
-  - 阿联酋 · 1350ms
-  - 德国 · 1353ms
-  - 英国 · 1364ms
-  - 加拿大 · 1388ms
-  - 美国 · 1403ms
-  - 美国 · 1406ms
-  - 德国 · 1413ms
-  - 未知地区 · 1425ms
-  - 印度尼西亚 · 1447ms
-  - 印度 · 1462ms
-  - 美国 · 1478ms
-  - 德国 · 1481ms
-  - 法国 · 1483ms
-  - 荷兰 · 1491ms
-  - 美国 · 1522ms
-  - 荷兰 · 1541ms
-  - 比利时 · 1546ms
-  - 未知地区 · 1550ms
-  - 英国 · 1552ms
-  - 荷兰 · 1555ms
-  - 法国 · 1567ms
-  - 法国 · 1568ms
-  - 比利时 · 1576ms
-  - 西班牙 · 1579ms
-  - 德国 · 1582ms
-  - 比利时 · 1589ms
-  - 奥地利 · 1604ms
-  - 未知地区 · 1609ms
-  - 荷兰 · 1613ms
-  - 奥地利 · 1614ms
-  - 法国 · 1629ms
-  - 英国 · 1629ms
-  - 美国 · 1639ms
-  - 美国 · 1648ms
-  - 荷兰 · 1649ms
-  - 荷兰 · 1657ms
-  - 新加坡 · 1660ms
-  - 美国 · 1662ms
-  - 英国 · 1663ms
-  - 美国 · 1664ms
-  - 德国 · 1668ms
-  - 奥地利 · 1668ms
-  - 美国 · 1671ms
-  - 美国 · 1672ms
-  - 德国 · 1672ms
-  - 波兰 · 1672ms
-  - 德国 · 1676ms
-  - 阿联酋 · 1677ms
-  - 美国 · 1681ms
-  - 美国 · 1683ms
-  - 波兰 · 1685ms
-  - 法国 · 1691ms
-  - 未知地区 · 1693ms
-  - 美国 · 1697ms
-  - 新加坡 · 1700ms
-  - 美国 · 1702ms
-  - 荷兰 · 1702ms
-  - 波兰 · 1704ms
-  - 德国 · 1706ms
-  - 美国 · 1707ms
-  - 未知地区 · 1714ms
-  - 未知地区 · 1715ms
-  - 美国 · 1715ms
-  - 新加坡 · 1719ms
-  - 德国 · 1721ms
-  - 未知地区 · 1722ms
-  - 未知地区 · 1723ms
-  - 阿联酋 · 1730ms
-  - 未知地区 · 1740ms
-  - 未知地区 · 1748ms
-  - 未知地区 · 1754ms
-  - 未知地区 · 1755ms
-  - 未知地区 · 1766ms
-  - 英国 · 1777ms
-  - 美国 · 1790ms
-  - 未知地区 · 1795ms
-  - 美国 · 1812ms
-  - 新加坡 · 1812ms
-  - 美国 · 1814ms
-  - 未知地区 · 1818ms
-  - 美国 · 1823ms
-  - 未知地区 · 1828ms
-  - 德国 · 1834ms
-  - 英国 · 1835ms
-  - 荷兰 · 1835ms
-  - 美国 · 1841ms
-  - 美国 · 1850ms
-  - 德国 · 1854ms
-  - 美国 · 1857ms
-  - 未知地区 · 1858ms
-  - 德国 · 1858ms
-  - 荷兰 · 1859ms
-  - 荷兰 · 1863ms
-  - 美国 · 1863ms
-  - 荷兰 · 1867ms
-  - 未知地区 · 1868ms
-  - 未知地区 · 1871ms
-  - 美国 · 1871ms
-  - 荷兰 · 1881ms
-  - 法国 · 1892ms
-  - 德国 · 1894ms
-  - 法国 · 1895ms
-  - 以色列 · 1897ms
-  - 英国 · 1901ms
-  - 以色列 · 1907ms
-  - 德国 · 1913ms
-  - 德国 · 1921ms
-  - 德国 · 1924ms
-  - '德国 · 1924ms #2'
-  - 德国 · 1938ms
-  - 未知地区 · 1941ms
-  - 德国 · 1941ms
-  - 未知地区 · 1944ms
-  - 德国 · 1949ms
-  - 美国 · 1955ms
-  - 法国 · 1957ms
-  - 德国 · 1960ms
-  - 未知地区 · 1960ms
-  - 未知地区 · 1963ms
-  - 美国 · 1966ms
-  - 西班牙 · 1972ms
-  - 未知地区 · 2001ms
-  - 法国 · 2004ms
-  - 未知地区 · 2012ms
-  - 未知地区 · 2028ms
-  - 德国 · 2029ms
-  - 未知地区 · 2030ms
-  - 未知地区 · 2039ms
-  - 未知地区 · 2043ms
-  - 未知地区 · 2051ms
-  - 意大利 · 2068ms
-  - 未知地区 · 2068ms
-  - 未知地区 · 2073ms
-  - 德国 · 2075ms
-  - 英国 · 2078ms
-  - 英国 · 2082ms
-  - 美国 · 2094ms
-  - 英国 · 2098ms
-  - 德国 · 2110ms
-  - 美国 · 2113ms
-  - 美国 · 2136ms
-  - 英国 · 2171ms
-  - 荷兰 · 2176ms
-  - 英国 · 2184ms
-  - 加拿大 · 2193ms
-  - 意大利 · 2195ms
-  - 英国 · 2209ms
-  - '英国 · 2209ms #2'
-  - 未知地区 · 2221ms
-  - 瑞士 · 2225ms
-  - 英国 · 2229ms
-  - 德国 · 2231ms
-  - 加拿大 · 2249ms
-  - 荷兰 · 2338ms
-  - 巴西 · 2362ms
-  - 英国 · 2382ms
-  - 荷兰 · 2418ms
-  - 英国 · 2422ms
-  - 英国 · 2423ms
-  - 英国 · 2426ms
-  - 英国 · 2428ms
-  - 荷兰 · 2478ms
-  - 德国 · 2488ms
-  - 英国 · 2512ms
-  - 美国 · 2525ms
-  - 英国 · 2544ms
-  - 德国 · 2560ms
-  - 英国 · 2664ms
-  - 荷兰 · 2694ms
-  - 美国 · 2714ms
-  - 英国 · 2738ms
-  - 英国 · 2765ms
-  - 美国 · 2793ms
-  - 荷兰 · 2837ms
-  - 以色列 · 2839ms
-  - 美国 · 2975ms
-  - 美国 · 3004ms
-  - 美国 · 3031ms
-  - 荷兰 · 3044ms
-  - 美国 · 3050ms
-  - 英国 · 3050ms
-  - 英国 · 3074ms
-  - 荷兰 · 3094ms
-  - 瑞典 · 3108ms
-  - 德国 · 3164ms
-  - 荷兰 · 3197ms
-  - 英国 · 3207ms
-  - 荷兰 · 3228ms
-  - 瑞士 · 3237ms
-  - 印度 · 3253ms
-  - 英国 · 3301ms
-  - 美国 · 3302ms
-  - 英国 · 3319ms
-  - 印度 · 3386ms
-  - 美国 · 3441ms
-  - 英国 · 3482ms
-  - 英国 · 3483ms
-  - 荷兰 · 3523ms
-  - 美国 · 3530ms
-  - 英国 · 3534ms
-  - 未知地区 · 3614ms
-  - 英国 · 3661ms
-  - 英国 · 3671ms
-  - 瑞士 · 3678ms
-  - 未知地区 · 3685ms
-  - 英国 · 3694ms
-  - 未知地区 · 3706ms
-  - 英国 · 3715ms
-  - 英国 · 3755ms
-  - 荷兰 · 3780ms
-  - 英国 · 3799ms
-  - 荷兰 · 3820ms
-  - 英国 · 3877ms
-  - 英国 · 3879ms
-  - 美国 · 3914ms
-  - 英国 · 3950ms
-  - 日本 · 3960ms
-  - 未知地区 · 3979ms
-  - 未知地区 · 3990ms
-  - 荷兰 · 4002ms
-  - 荷兰 · 4019ms
-  - 英国 · 4084ms
-  - 荷兰 · 4202ms
-  - 英国 · 4205ms
-  - 英国 · 4206ms
-  - 美国 · 4208ms
-  - 荷兰 · 4249ms
-  - 荷兰 · 4281ms
-  - 美国 · 4289ms
-  - 美国 · 4312ms
-  - 美国 · 4387ms
-  - 美国 · 4394ms
-  - 美国 · 4413ms
-  - '美国 · 4413ms #2'
-  - 美国 · 4425ms
-  - 英国 · 4444ms
-  - 英国 · 4465ms
+  - 🇸🇬 新加坡 · 568ms · 0.1MB/s
+  - 🌐 未知地区 · 616ms · 0.2MB/s
+  - 🌐 未知地区 · 632ms
+  - 🇯🇵 日本 · 641ms · 0.2MB/s
+  - 🇯🇵 日本 · 662ms · 0.3MB/s
+  - 🇯🇵 日本 · 664ms · 0.3MB/s
+  - 🇯🇵 日本 · 666ms · 0.2MB/s
+  - 🇺🇸 美国 · 680ms · 0.2MB/s
+  - 🇺🇸 美国 · 681ms · 0.2MB/s
+  - 🇰🇷 韩国 · 683ms · 0.3MB/s
+  - 🇺🇸 美国 · 704ms
+  - 🇩🇪 德国 · 730ms
+  - 🇺🇸 美国 · 735ms
+  - '🇺🇸 美国 · 735ms #2'
+  - 🇺🇸 美国 · 742ms
+  - 🇺🇸 美国 · 745ms
+  - 🇭🇰 香港 · 763ms
+  - 🇺🇸 美国 · 785ms
+  - 🇯🇵 日本 · 814ms
+  - 🇯🇵 日本 · 815ms
+  - 🇯🇵 日本 · 820ms
+  - 🇻🇳 越南 · 903ms
+  - 🇯🇵 日本 · 913ms
+  - 🇮🇩 印度尼西亚 · 934ms
+  - 🇮🇳 印度 · 954ms
+  - 🇻🇳 越南 · 955ms
+  - 🇨🇦 加拿大 · 959ms
+  - 🇨🇦 加拿大 · 967ms
+  - 🇰🇷 韩国 · 967ms
+  - 🇰🇷 韩国 · 983ms
+  - 🇮🇳 印度 · 989ms
+  - 🇺🇸 美国 · 989ms
+  - 🇺🇸 美国 · 995ms
+  - 🇺🇸 美国 · 1005ms
+  - 🇭🇰 香港 · 1007ms
+  - 🇬🇧 英国 · 1020ms
+  - 🇳🇱 荷兰 · 1022ms
+  - 🇭🇰 香港 · 1026ms
+  - 🇳🇱 荷兰 · 1027ms
+  - 🇳🇱 荷兰 · 1028ms
+  - 🇬🇧 英国 · 1029ms
+  - 🇺🇸 美国 · 1029ms
+  - 🇯🇵 日本 · 1034ms
+  - 🇬🇧 英国 · 1040ms
+  - 🇬🇧 英国 · 1042ms
+  - 🇳🇱 荷兰 · 1049ms
+  - 🇯🇵 日本 · 1052ms
+  - 🇬🇧 英国 · 1057ms
+  - '🇬🇧 英国 · 1057ms #2'
+  - 🇬🇧 英国 · 1061ms
+  - 🇬🇧 英国 · 1067ms
+  - 🇺🇸 美国 · 1071ms
+  - 🇯🇵 日本 · 1077ms
+  - 🇩🇪 德国 · 1077ms
+  - 🇺🇸 美国 · 1078ms
+  - 🇺🇸 美国 · 1082ms
+  - 🇺🇸 美国 · 1091ms
+  - 🇺🇸 美国 · 1094ms
+  - 🇸🇬 新加坡 · 1098ms
+  - 🇸🇬 新加坡 · 1106ms
+  - 🇺🇸 美国 · 1108ms
+  - 🇺🇸 美国 · 1113ms
+  - 🇺🇸 美国 · 1135ms
+  - 🇺🇸 美国 · 1136ms
+  - 🌐 未知地区 · 1139ms
+  - 🇺🇸 美国 · 1139ms
+  - 🇦🇺 澳大利亚 · 1143ms
+  - 🇦🇺 澳大利亚 · 1146ms
+  - 🇳🇱 荷兰 · 1153ms
+  - 🇦🇺 澳大利亚 · 1161ms
+  - 🇺🇸 美国 · 1161ms
+  - 🇺🇸 美国 · 1163ms
+  - 🇺🇸 美国 · 1177ms
+  - 🇰🇷 韩国 · 1201ms
+  - 🇨🇦 加拿大 · 1212ms
+  - 🇺🇸 美国 · 1213ms
+  - 🇺🇸 美国 · 1230ms
+  - 🇳🇱 荷兰 · 1248ms
+  - 🇩🇪 德国 · 1252ms
+  - 🇿🇦 南非 · 1268ms
+  - 🇿🇦 南非 · 1277ms
+  - 🇺🇸 美国 · 1289ms
+  - 🇦🇪 阿联酋 · 1291ms
+  - 🌐 未知地区 · 1294ms
+  - 🇳🇱 荷兰 · 1296ms
+  - 🇬🇧 英国 · 1302ms
+  - 🇰🇷 韩国 · 1305ms
+  - 🇬🇧 英国 · 1306ms
+  - 🇬🇧 英国 · 1307ms
+  - 🇬🇧 英国 · 1309ms
+  - 🇸🇬 新加坡 · 1313ms
+  - 🇩🇪 德国 · 1314ms
+  - 🇬🇧 英国 · 1314ms
+  - '🇬🇧 英国 · 1314ms #2'
+  - 🇬🇧 英国 · 1315ms
+  - '🇬🇧 英国 · 1315ms #2'
+  - 🇬🇧 英国 · 1316ms
+  - 🇬🇧 英国 · 1320ms
+  - 🇺🇸 美国 · 1321ms
+  - 🇬🇧 英国 · 1321ms
+  - 🇯🇵 日本 · 1329ms
+  - 🇬🇧 英国 · 1330ms
+  - '🇬🇧 英国 · 1330ms #2'
+  - 🇬🇧 英国 · 1331ms
+  - 🇬🇧 英国 · 1334ms
+  - 🇬🇧 英国 · 1336ms
+  - 🇬🇧 英国 · 1341ms
+  - 🌐 未知地区 · 1343ms
+  - 🇬🇧 英国 · 1343ms
+  - '🇬🇧 英国 · 1343ms #2'
+  - 🇬🇧 英国 · 1344ms
+  - 🇬🇧 英国 · 1346ms
+  - 🇬🇧 英国 · 1347ms
+  - 🇬🇧 英国 · 1350ms
+  - '🇬🇧 英国 · 1350ms #2'
+  - 🇬🇧 英国 · 1351ms
+  - 🇬🇧 英国 · 1352ms
+  - 🇬🇧 英国 · 1358ms
+  - 🇩🇪 德国 · 1360ms
+  - 🇩🇪 德国 · 1361ms
+  - 🇺🇸 美国 · 1361ms
+  - 🇩🇪 德国 · 1366ms
+  - 🇬🇧 英国 · 1370ms
+  - 🇸🇬 新加坡 · 1372ms
+  - 🌐 未知地区 · 1375ms
+  - 🇬🇧 英国 · 1389ms
+  - 🇯🇵 日本 · 1391ms
+  - 🇬🇧 英国 · 1392ms
+  - 🇬🇧 英国 · 1396ms
+  - 🇬🇧 英国 · 1398ms
+  - 🇬🇧 英国 · 1401ms
+  - 🇬🇧 英国 · 1402ms
+  - '🇬🇧 英国 · 1402ms #2'
+  - 🇬🇧 英国 · 1406ms
+  - 🇬🇧 英国 · 1407ms
+  - 🇬🇧 英国 · 1408ms
+  - 🇬🇧 英国 · 1410ms
+  - 🇬🇧 英国 · 1412ms
+  - '🇬🇧 英国 · 1412ms #2'
+  - 🇬🇧 英国 · 1413ms
+  - 🇬🇧 英国 · 1414ms
+  - 🇬🇧 英国 · 1417ms
+  - '🇬🇧 英国 · 1417ms #2'
+  - 🇬🇧 英国 · 1420ms
+  - 🇬🇧 英国 · 1421ms
+  - 🇬🇧 英国 · 1422ms
+  - 🇺🇸 美国 · 1423ms
+  - 🇬🇧 英国 · 1423ms
+  - 🇬🇧 英国 · 1427ms
+  - 🇺🇸 美国 · 1427ms
+  - 🇬🇧 英国 · 1432ms
+  - 🇬🇧 英国 · 1435ms
+  - '🇬🇧 英国 · 1435ms #2'
+  - 🇬🇧 英国 · 1441ms
+  - 🇬🇧 英国 · 1442ms
+  - 🇬🇧 英国 · 1445ms
+  - 🇺🇸 美国 · 1447ms
+  - 🇬🇧 英国 · 1448ms
+  - 🇩🇪 德国 · 1454ms
+  - 🇬🇧 英国 · 1455ms
+  - 🇬🇧 英国 · 1458ms
+  - 🇬🇧 英国 · 1460ms
+  - 🇬🇧 英国 · 1461ms
+  - 🇬🇧 英国 · 1469ms
+  - 🇺🇸 美国 · 1478ms
+  - 🇬🇧 英国 · 1489ms
+  - 🇺🇸 美国 · 1492ms
+  - 🇺🇸 美国 · 1499ms
+  - 🇺🇸 美国 · 1500ms
+  - 🇬🇧 英国 · 1501ms
+  - 🇬🇧 英国 · 1502ms
+  - 🇬🇧 英国 · 1506ms
+  - 🇬🇧 英国 · 1511ms
+  - 🇬🇧 英国 · 1512ms
+  - 🇳🇱 荷兰 · 1519ms
+  - 🇳🇱 荷兰 · 1526ms
+  - 🇳🇱 荷兰 · 1529ms
+  - 🇫🇷 法国 · 1580ms
+  - 🌐 未知地区 · 1584ms
+  - 🇫🇷 法国 · 1590ms
+  - 🇩🇪 德国 · 1595ms
+  - 🇳🇱 荷兰 · 1609ms
+  - 🇳🇱 荷兰 · 1624ms
+  - 🇺🇸 美国 · 1630ms
+  - 🇺🇸 美国 · 1641ms
+  - 🇦🇹 奥地利 · 1642ms
+  - 🇺🇸 美国 · 1645ms
+  - '🇺🇸 美国 · 1645ms #2'
+  - 🇩🇪 德国 · 1656ms
+  - 🇺🇸 美国 · 1656ms
+  - 🇬🇧 英国 · 1658ms
+  - 🇺🇸 美国 · 1664ms
+  - 🇵🇱 波兰 · 1668ms
+  - 🇺🇸 美国 · 1671ms
+  - 🇺🇸 美国 · 1673ms
+  - 🇺🇸 美国 · 1674ms
+  - 🇵🇱 波兰 · 1677ms
+  - 🇵🇱 波兰 · 1679ms
+  - 🇺🇸 美国 · 1693ms
+  - 🌐 未知地区 · 1694ms
+  - 🇬🇧 英国 · 1704ms
+  - 🇬🇧 英国 · 1707ms
+  - 🇩🇪 德国 · 1713ms
+  - 🇺🇸 美国 · 1715ms
+  - 🇨🇦 加拿大 · 1716ms
+  - 🌐 未知地区 · 1717ms
+  - 🌐 未知地区 · 1721ms
+  - 🇦🇪 阿联酋 · 1729ms
+  - 🌐 未知地区 · 1729ms
+  - 🇩🇪 德国 · 1732ms
+  - 🌐 未知地区 · 1733ms
+  - 🇫🇷 法国 · 1733ms
+  - 🌐 未知地区 · 1736ms
+  - 🇬🇧 英国 · 1736ms
+  - 🇬🇧 英国 · 1737ms
+  - 🇳🇱 荷兰 · 1737ms
+  - 🌐 未知地区 · 1740ms
+  - 🇩🇪 德国 · 1747ms
+  - 🇩🇪 德国 · 1748ms
+  - 🇺🇸 美国 · 1754ms
+  - 🌐 未知地区 · 1756ms
+  - 🌐 未知地区 · 1759ms
+  - 🇩🇪 德国 · 1760ms
+  - 🇬🇧 英国 · 1760ms
+  - 🇺🇸 美国 · 1789ms
+  - 🌐 未知地区 · 1799ms
+  - 🇺🇸 美国 · 1800ms
+  - 🌐 未知地区 · 1805ms
+  - 🌐 未知地区 · 1810ms
+  - 🇺🇸 美国 · 1813ms
+  - 🌐 未知地区 · 1818ms
+  - 🇺🇸 美国 · 1823ms
+  - 🇺🇸 美国 · 1825ms
+  - 🇺🇸 美国 · 1827ms
+  - 🇫🇷 法国 · 1827ms
+  - 🇳🇱 荷兰 · 1842ms
+  - 🌐 未知地区 · 1845ms
+  - 🇳🇱 荷兰 · 1848ms
+  - 🇺🇸 美国 · 1853ms
+  - 🇬🇧 英国 · 1854ms
+  - 🇺🇸 美国 · 1854ms
+  - 🇳🇱 荷兰 · 1856ms
+  - 🇳🇱 荷兰 · 1869ms
+  - 🇩🇪 德国 · 1887ms
+  - 🇳🇱 荷兰 · 1895ms
+  - 🇩🇪 德国 · 1900ms
+  - 🇩🇪 德国 · 1902ms
+  - 🇩🇪 德国 · 1912ms
+  - 🌐 未知地区 · 1917ms
+  - 🇩🇪 德国 · 1919ms
+  - 🇺🇸 美国 · 1929ms
+  - 🌐 未知地区 · 1940ms
+  - 🇫🇷 法国 · 1941ms
+  - 🇩🇪 德国 · 1944ms
+  - 🇩🇪 德国 · 1947ms
+  - 🌐 未知地区 · 1950ms
+  - 🇩🇪 德国 · 1959ms
+  - 🇧🇷 巴西 · 1968ms
+  - 🇩🇪 德国 · 1968ms
+  - 🇫🇷 法国 · 1973ms
+  - 🇩🇪 德国 · 1974ms
+  - 🇫🇷 法国 · 2025ms
+  - 🌐 未知地区 · 2026ms
+  - '🌐 未知地区 · 2026ms #2'
+  - 🇮🇹 意大利 · 2033ms
+  - 🇩🇪 德国 · 2036ms
+  - 🌐 未知地区 · 2043ms
+  - 🇳🇱 荷兰 · 2048ms
+  - 🇬🇧 英国 · 2049ms
+  - 🇬🇧 英国 · 2055ms
+  - 🇳🇱 荷兰 · 2057ms
+  - 🌐 未知地区 · 2060ms
+  - 🇺🇸 美国 · 2066ms
+  - 🌐 未知地区 · 2071ms
+  - 🇺🇸 美国 · 2089ms
+  - 🇺🇸 美国 · 2113ms
+  - 🇬🇧 英国 · 2119ms
+  - 🇺🇸 美国 · 2135ms
+  - 🇨🇦 加拿大 · 2145ms
+  - 🇺🇸 美国 · 2154ms
+  - 🇬🇧 英国 · 2158ms
+  - 🌐 未知地区 · 2192ms
+  - 🇨🇭 瑞士 · 2196ms
+  - 🇳🇱 荷兰 · 2236ms
+  - 🇳🇱 荷兰 · 2244ms
+  - 🇺🇸 美国 · 2255ms
+  - 🇫🇷 法国 · 2256ms
+  - 🇺🇸 美国 · 2262ms
+  - 🇩🇪 德国 · 2265ms
+  - 🌐 未知地区 · 2274ms
+  - 🇫🇷 法国 · 2305ms
+  - 🇸🇬 新加坡 · 2314ms
+  - 🇧🇷 巴西 · 2317ms
+  - 🇮🇱 以色列 · 2332ms
+  - 🇺🇸 美国 · 2332ms
+  - 🇳🇱 荷兰 · 2340ms
+  - 🇮🇹 意大利 · 2355ms
+  - 🇳🇱 荷兰 · 2372ms
+  - 🇳🇱 荷兰 · 2433ms
+  - 🇬🇧 英国 · 2450ms
+  - 🇬🇧 英国 · 2455ms
+  - 🇺🇸 美国 · 2463ms
+  - 🇬🇧 英国 · 2489ms
+  - 🇬🇧 英国 · 2542ms
+  - 🇬🇧 英国 · 2619ms
+  - 🇬🇧 英国 · 2623ms
+  - 🇩🇪 德国 · 2669ms
+  - 🌐 未知地区 · 2777ms
+  - 🇮🇩 印度尼西亚 · 2842ms
+  - 🇯🇵 日本 · 2855ms
+  - 🇬🇧 英国 · 2869ms
+  - 🇳🇱 荷兰 · 2873ms
+  - 🇩🇪 德国 · 2913ms
+  - 🇮🇩 印度尼西亚 · 2922ms
+  - 🇮🇩 印度尼西亚 · 2941ms
+  - 🇺🇸 美国 · 3012ms
+  - 🇳🇱 荷兰 · 3021ms
+  - '🇳🇱 荷兰 · 3021ms #2'
+  - 🇩🇪 德国 · 3146ms
+  - 🇳🇱 荷兰 · 3234ms
+  - 🇳🇱 荷兰 · 3259ms
+  - 🇩🇪 德国 · 3335ms
+  - 🇮🇳 印度 · 3362ms
+  - 🇬🇧 英国 · 3389ms
+  - 🇩🇪 德国 · 3472ms
+  - 🌐 未知地区 · 3484ms
+  - 🇩🇪 德国 · 3488ms
+  - 🇺🇸 美国 · 3509ms
+  - 🇮🇳 印度 · 3526ms
+  - 🌐 未知地区 · 3627ms
+  - 🇩🇪 德国 · 3633ms
+  - 🇪🇸 西班牙 · 3726ms
+  - 🇪🇸 西班牙 · 3738ms
+  - 🇪🇸 西班牙 · 3758ms
+  - 🇪🇸 西班牙 · 3773ms
+  - 🇪🇸 西班牙 · 3774ms
+  - 🇪🇸 西班牙 · 3784ms
+  - 🇪🇸 西班牙 · 3789ms
+  - 🇪🇸 西班牙 · 3804ms
+  - 🇮🇱 以色列 · 3860ms
+  - 🇮🇱 以色列 · 3884ms
+  - 🇪🇸 西班牙 · 3959ms
+  - 🇺🇸 美国 · 3966ms
+  - 🇧🇷 巴西 · 4036ms
+  - 🇪🇸 西班牙 · 4056ms
+  - 🇩🇪 德国 · 4061ms
+  - 🇳🇱 荷兰 · 4085ms
+  - 🇺🇸 美国 · 4113ms
+  - 🌐 未知地区 · 4151ms
+  - 🇩🇪 德国 · 4159ms
+  - 🇩🇪 德国 · 4195ms
+  - 🌐 未知地区 · 4275ms
+  - 🇧🇷 巴西 · 4287ms
+  - 🇳🇱 荷兰 · 4336ms
 rules:
 - GEOSITE,private,DIRECT
 - GEOSITE,cn,DIRECT

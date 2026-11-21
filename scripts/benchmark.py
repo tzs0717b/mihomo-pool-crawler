@@ -27,6 +27,10 @@ DEFAULT_INPUT = ROOT / "nodes.yaml"
 DEFAULT_OUTPUT = ROOT / "clash-subscription.yaml"
 DEFAULT_REPORT = ROOT / "benchmark.json"
 TEST_URL = "https://www.gstatic.com/generate_204"
+SPEED_URL = "https://speed.cloudflare.com/__down?bytes=262144"
+SPEED_BYTES = 262144
+SPEED_TEST_COUNT = 10
+SPEED_TIMEOUT = 8
 
 
 def available_port() -> int:
@@ -60,14 +64,16 @@ def with_unique_names(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return result
 
 
-def mihomo_config(nodes: list[dict[str, Any]], controller_port: int) -> dict[str, Any]:
+def mihomo_config(nodes: list[dict[str, Any]], controller_port: int, proxy_port: int) -> dict[str, Any]:
     return {
+        "mixed-port": proxy_port,
         "allow-lan": False,
         "mode": "rule",
         "log-level": "error",
         "external-controller": f"127.0.0.1:{controller_port}",
         "proxies": nodes,
-        "rules": ["MATCH,DIRECT"],
+        "proxy-groups": [{"name": "GLOBAL", "type": "select", "proxies": ["DIRECT", *[node["name"] for node in nodes]]}],
+        "rules": ["MATCH,GLOBAL"],
     }
 
 
@@ -124,29 +130,96 @@ CODE_NAMES = {
 }
 
 
-def country_label(name: str) -> str:
+def country_flag(code: str) -> str:
+    code = {"UK": "GB"}.get(code.upper(), code.upper())
+    if len(code) != 2 or not code.isalpha():
+        return "🌐"
+    return "".join(chr(0x1F1E6 + ord(letter) - ord("A")) for letter in code)
+
+
+def country_info(name: str) -> tuple[str, str]:
     for flag, country in COUNTRY_NAMES.items():
         if flag in name:
-            return country
+            return flag, country
     for code, country in CODE_NAMES.items():
-        if re.search(rf"(?<![A-Za-z]){code}(?![A-Za-z])", name.upper()):
-            return country
+        if re.search(rf"(?<![A-Za-z]){code}(?![A-Za-z])", name):
+            return country_flag(code), country
     for country in CODE_NAMES.values():
         if country in name:
-            return country
-    return "未知地区"
+            code = next(code for code, label in CODE_NAMES.items() if label == country and code != "UK")
+            return country_flag(code), country
+    return "🌐", "未知地区"
 
 
-def display_name(source_name: str, delay: int) -> str:
-    return f"{country_label(source_name)} · {delay}ms"
+def country_label(name: str) -> str:
+    return country_info(name)[1]
 
 
-def config_for_output(nodes_with_latency: list[tuple[dict[str, Any], int]]) -> dict[str, Any]:
+def display_name(source_name: str, delay: int, speed_mbps: float | None = None) -> str:
+    flag, country = country_info(source_name)
+    suffix = f" · {speed_mbps:.1f}MB/s" if speed_mbps is not None else ""
+    return f"{flag} {country} · {delay}ms{suffix}"
+
+
+def measure_download_speed(proxy_port: int, timeout: int = SPEED_TIMEOUT) -> float | None:
+    opener = urllib.request.build_opener(
+        urllib.request.ProxyHandler({"http": f"http://127.0.0.1:{proxy_port}", "https": f"http://127.0.0.1:{proxy_port}"})
+    )
+    request = urllib.request.Request(SPEED_URL, headers={"User-Agent": "mihomo-pool-crawler/1.0"})
+    started = time.monotonic()
+    total = 0
+    try:
+        with opener.open(request, timeout=timeout) as response:
+            while total < SPEED_BYTES:
+                chunk = response.read(min(65536, SPEED_BYTES - total))
+                if not chunk:
+                    break
+                total += len(chunk)
+        elapsed = time.monotonic() - started
+        if total < 65536 or elapsed <= 0:
+            return None
+        return total / elapsed / 1_000_000
+    except (urllib.error.URLError, TimeoutError, OSError):
+        return None
+
+
+def api_request(base_url: str, path: str, method: str = "GET", payload: dict[str, Any] | None = None) -> dict[str, Any]:
+    body = json.dumps(payload).encode() if payload is not None else None
+    request = urllib.request.Request(f"{base_url}{path}", data=body, method=method, headers={"Content-Type": "application/json"})
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    with opener.open(request, timeout=5) as response:
+        return json.loads(response.read().decode("utf-8")) if response.status != 204 else {}
+
+
+def select_proxy(base_url: str, name: str) -> None:
+    api_request(base_url, "/proxies/GLOBAL", "PUT", {"name": name})
+
+
+def measure_node_speeds(base_url: str, nodes_with_latency: list[tuple[dict[str, Any], int]], proxy_port: int) -> dict[str, float]:
+    results: dict[str, float] = {}
+    best_first = sorted(nodes_with_latency, key=lambda row: row[1])[:SPEED_TEST_COUNT]
+    for index, (node, _) in enumerate(best_first, 1):
+        try:
+            select_proxy(base_url, node["name"])
+            time.sleep(0.25)
+            speed = measure_download_speed(proxy_port)
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+            speed = None
+        if speed is not None:
+            results[node["name"]] = speed
+            print(f"speed {index}/{len(best_first)}: {speed:.2f} MB/s", flush=True)
+        else:
+            print(f"speed {index}/{len(best_first)}: unavailable", flush=True)
+    return results
+
+
+def config_for_output(nodes_with_latency: list[tuple[dict[str, Any], int]], speeds: dict[str, float] | None = None) -> dict[str, Any]:
+    speeds = speeds or {}
     proxies = []
     used_names: set[str] = set()
     for source, delay in nodes_with_latency:
         node = dict(source)
-        base = display_name(str(node.get("name", "")), delay)
+        base = display_name(str(node.get("name", "")), delay, speeds.get(source["name"]))
         name = base
         suffix = 2
         while name in used_names:
@@ -197,6 +270,7 @@ def run(input_path: Path, output_path: Path, report_path: Path, mihomo: str, wor
         raise ValueError("no proxy nodes found")
 
     controller_port = available_port()
+    proxy_port = available_port()
     base_url = f"http://127.0.0.1:{controller_port}"
     with tempfile.TemporaryDirectory(prefix="mihomo-benchmark-") as temporary:
         tempdir = Path(temporary)
@@ -204,7 +278,7 @@ def run(input_path: Path, output_path: Path, report_path: Path, mihomo: str, wor
         data_dir = tempdir / "data"
         log_path = tempdir / "mihomo.log"
         config_path.write_text(
-            yaml.safe_dump(mihomo_config(nodes, controller_port), allow_unicode=True, sort_keys=False),
+            yaml.safe_dump(mihomo_config(nodes, controller_port, proxy_port), allow_unicode=True, sort_keys=False),
             encoding="utf-8",
         )
         command = [mihomo, "-d", str(data_dir), "-f", str(config_path)]
@@ -232,7 +306,8 @@ def run(input_path: Path, output_path: Path, report_path: Path, mihomo: str, wor
             if not success:
                 print("No nodes passed the latency test; previous output kept.", file=sys.stderr)
                 return 1
-            config = config_for_output(success)
+            speeds = measure_node_speeds(base_url, success, proxy_port)
+            config = config_for_output(success, speeds)
             content = yaml.safe_dump(config, allow_unicode=True, sort_keys=False, width=120)
             atomic_write(output_path, content)
             delays = [delay for _, delay in success]
@@ -243,6 +318,13 @@ def run(input_path: Path, output_path: Path, report_path: Path, mihomo: str, wor
                 "alive": len(success),
                 "failed": failures,
                 "timeout_ms": timeout_ms,
+                "speed_test": {
+                    "url": SPEED_URL,
+                    "sample_bytes": SPEED_BYTES,
+                    "candidates": min(SPEED_TEST_COUNT, len(success)),
+                    "measured": len(speeds),
+                    "results_mbps_decimal": {display_name(node["name"], delay, speeds.get(node["name"])): round(speeds[node["name"]], 2) for node, delay in success if node["name"] in speeds},
+                },
                 "latency_ms": {
                     "min": min(delays),
                     "median": sorted(delays)[len(delays) // 2],
