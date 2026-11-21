@@ -6,6 +6,7 @@ import argparse
 import concurrent.futures
 import json
 import os
+import re
 import socket
 import subprocess
 import sys
@@ -103,11 +104,56 @@ def probe(base_url: str, name: str, timeout_ms: int) -> tuple[str, int | None]:
     return name, None
 
 
+COUNTRY_NAMES = {
+    "🇨🇳": "中国", "🇭🇰": "香港", "🇲🇴": "澳门", "🇹🇼": "台湾", "🇯🇵": "日本",
+    "🇰🇷": "韩国", "🇸🇬": "新加坡", "🇺🇸": "美国", "🇨🇦": "加拿大", "🇬🇧": "英国",
+    "🇩🇪": "德国", "🇫🇷": "法国", "🇳🇱": "荷兰", "🇷🇺": "俄罗斯", "🇮🇳": "印度",
+    "🇦🇺": "澳大利亚", "🇹🇭": "泰国", "🇻🇳": "越南", "🇲🇾": "马来西亚", "🇮🇩": "印度尼西亚",
+    "🇹🇷": "土耳其", "🇮🇹": "意大利", "🇪🇸": "西班牙", "🇵🇱": "波兰", "🇨🇭": "瑞士",
+    "🇸🇪": "瑞典", "🇳🇴": "挪威", "🇫🇮": "芬兰", "🇧🇪": "比利时", "🇦🇹": "奥地利",
+    "🇧🇷": "巴西", "🇦🇪": "阿联酋", "🇮🇱": "以色列", "🇿🇦": "南非", "🇵🇭": "菲律宾",
+}
+CODE_NAMES = {
+    "CN": "中国", "HK": "香港", "MO": "澳门", "TW": "台湾", "JP": "日本", "KR": "韩国",
+    "SG": "新加坡", "US": "美国", "CA": "加拿大", "GB": "英国", "UK": "英国", "DE": "德国",
+    "FR": "法国", "NL": "荷兰", "RU": "俄罗斯", "IN": "印度", "AU": "澳大利亚", "TH": "泰国",
+    "VN": "越南", "MY": "马来西亚", "ID": "印度尼西亚", "TR": "土耳其", "IT": "意大利",
+    "ES": "西班牙", "PL": "波兰", "CH": "瑞士", "SE": "瑞典", "NO": "挪威", "FI": "芬兰",
+    "BE": "比利时", "AT": "奥地利", "BR": "巴西", "AE": "阿联酋", "IL": "以色列",
+    "ZA": "南非", "PH": "菲律宾",
+}
+
+
+def country_label(name: str) -> str:
+    for flag, country in COUNTRY_NAMES.items():
+        if flag in name:
+            return country
+    for code, country in CODE_NAMES.items():
+        if re.search(rf"(?<![A-Za-z]){code}(?![A-Za-z])", name.upper()):
+            return country
+    for country in CODE_NAMES.values():
+        if country in name:
+            return country
+    return "未知地区"
+
+
+def display_name(source_name: str, delay: int) -> str:
+    return f"{country_label(source_name)} · {delay}ms"
+
+
 def config_for_output(nodes_with_latency: list[tuple[dict[str, Any], int]]) -> dict[str, Any]:
     proxies = []
+    used_names: set[str] = set()
     for source, delay in nodes_with_latency:
         node = dict(source)
-        node["name"] = f"{node['name']} · {delay}ms"
+        base = display_name(str(node.get("name", "")), delay)
+        name = base
+        suffix = 2
+        while name in used_names:
+            name = f"{base} #{suffix}"
+            suffix += 1
+        used_names.add(name)
+        node["name"] = name
         proxies.append(node)
     names = [node["name"] for node in proxies]
     return {
@@ -121,7 +167,13 @@ def config_for_output(nodes_with_latency: list[tuple[dict[str, Any], int]]) -> d
             {"name": "自动测速", "type": "url-test", "proxies": names, "url": TEST_URL, "interval": 300, "tolerance": 80},
             {"name": "节点选择", "type": "select", "proxies": ["自动测速", "DIRECT", *names]},
         ],
-        "rules": ["MATCH,节点选择"],
+        "rules": [
+            "GEOSITE,private,DIRECT",
+            "GEOSITE,cn,DIRECT",
+            "GEOIP,LAN,DIRECT,no-resolve",
+            "GEOIP,CN,DIRECT,no-resolve",
+            "MATCH,节点选择",
+        ],
     }
 
 
