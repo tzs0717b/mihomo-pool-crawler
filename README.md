@@ -22,3 +22,18 @@ python scripts/benchmark.py --mihomo /path/to/mihomo
 ```
 
 `benchmark.json` 记录测试时间、成功数和延迟范围。
+
+## 采集源
+
+- [Ruk1ng001/freeSub](https://github.com/Ruk1ng001/freeSub)
+- [peasoft/NoMoreWalls](https://github.com/peasoft/NoMoreWalls)
+- [chengaopan/AutoMergePublicNodes](https://github.com/chengaopan/AutoMergePublicNodes)
+- [zhuhaiuk/free-nodes](https://github.com/zhuhaiuk/free-nodes)
+- [free18/v2ray](https://github.com/free18/v2ray)
+- [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe)
+- [mahdibland/ShadowsocksAggregator](https://github.com/mahdibland/ShadowsocksAggregator)
+- [anaer/Sub](https://github.com/anaer/Sub)
+- [yy1588133/proxy-pool](https://github.com/yy1588133/proxy-pool)
+- [go4sharing/sub](https://github.com/go4sharing/sub)
+
+`report.json` 记录每个源的抓取数量和去重后的新增数量。上游大多也是聚合池；地址能抓取不代表节点可用，可用性以本机测速为准。

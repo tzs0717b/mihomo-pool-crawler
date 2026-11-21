@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T03:57:44+00:00",
-  "total_nodes": 1475,
+  "updated_at": "2026-11-21T11:54:00+00:00",
+  "total_nodes": 3423,
   "sources": {
     "freeSub": {
       "url": "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
@@ -11,31 +11,31 @@
     "NoMoreWalls": {
       "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml",
       "ok": true,
-      "nodes": 298,
-      "parsed": 320
+      "nodes": 238,
+      "parsed": 254
     },
     "AutoMergePublicNodes": {
       "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml",
       "ok": true,
       "nodes": 0,
-      "parsed": 320
+      "parsed": 254
     },
     "zhuhaiuk": {
       "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml",
       "ok": true,
-      "nodes": 25,
-      "parsed": 29
+      "nodes": 23,
+      "parsed": 31
     },
     "free18": {
       "url": "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
       "ok": true,
-      "nodes": 504,
-      "parsed": 504
+      "nodes": 642,
+      "parsed": 651
     },
     "ermaozi": {
       "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
       "ok": true,
-      "nodes": 93,
+      "nodes": 138,
       "parsed": 361
     },
     "Eternity": {
@@ -43,6 +43,24 @@
       "ok": true,
       "nodes": 134,
       "parsed": 201
+    },
+    "anaer-Sub": {
+      "url": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
+      "ok": true,
+      "nodes": 1794,
+      "parsed": 1796
+    },
+    "yy1588133-proxy-pool": {
+      "url": "https://raw.githubusercontent.com/yy1588133/proxy-pool/main/clash.yaml",
+      "ok": true,
+      "nodes": 23,
+      "parsed": 1183
+    },
+    "go4sharing-sub": {
+      "url": "https://raw.githubusercontent.com/go4sharing/sub/main/clash.yaml",
+      "ok": true,
+      "nodes": 10,
+      "parsed": 10
     }
   }
 }

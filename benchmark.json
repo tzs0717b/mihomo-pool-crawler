@@ -1,9 +1,9 @@
 {
-  "tested_at": "2026-11-21T11:35:08+00:00",
+  "tested_at": "2026-11-21T11:57:04+00:00",
   "test_url": "https://www.gstatic.com/generate_204",
-  "tested": 1475,
-  "alive": 354,
-  "failed": 1121,
+  "tested": 3423,
+  "alive": 547,
+  "failed": 2876,
   "timeout_ms": 4500,
   "speed_test": {
     "url": "https://speed.cloudflare.com/__down?bytes=262144",
@@ -11,20 +11,19 @@
     "candidates": 10,
     "measured": 9,
     "results_mbps_decimal": {
-      "🇸🇬 新加坡 · 568ms · 0.1MB/s": 0.08,
-      "🌐 未知地区 · 616ms · 0.2MB/s": 0.25,
-      "🇯🇵 日本 · 641ms · 0.2MB/s": 0.22,
-      "🇯🇵 日本 · 662ms · 0.3MB/s": 0.25,
-      "🇯🇵 日本 · 664ms · 0.3MB/s": 0.27,
-      "🇯🇵 日本 · 666ms · 0.2MB/s": 0.24,
-      "🇺🇸 美国 · 680ms · 0.2MB/s": 0.22,
-      "🇺🇸 美国 · 681ms · 0.2MB/s": 0.22,
-      "🇰🇷 韩国 · 683ms · 0.3MB/s": 0.26
+      "🇸🇬 新加坡 · 340ms · 0.3MB/s": 0.34,
+      "🇸🇬 新加坡 · 354ms · 0.4MB/s": 0.35,
+      "🇸🇬 新加坡 · 407ms · 0.3MB/s": 0.35,
+      "🇸🇬 新加坡 · 444ms · 0.3MB/s": 0.31,
+      "🌐 未知地区 · 510ms · 0.3MB/s": 0.31,
+      "🌐 未知地区 · 514ms · 0.3MB/s": 0.3,
+      "🇺🇸 美国 · 520ms · 0.3MB/s": 0.28,
+      "🇯🇵 日本 · 524ms · 0.3MB/s": 0.29
     }
   },
   "latency_ms": {
-    "min": 568,
-    "median": 1580,
-    "max": 4336
+    "min": 340,
+    "median": 1374,
+    "max": 4479
   }
 }

@@ -37,6 +37,9 @@ SOURCES = {
     "free18": "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
     "ermaozi": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
     "Eternity": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml",
+    "anaer-Sub": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
+    "yy1588133-proxy-pool": "https://raw.githubusercontent.com/yy1588133/proxy-pool/main/clash.yaml",
+    "go4sharing-sub": "https://raw.githubusercontent.com/go4sharing/sub/main/clash.yaml",
 }
 
 
