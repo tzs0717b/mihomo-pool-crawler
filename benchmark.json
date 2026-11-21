@@ -1,0 +1,13 @@
+{
+  "tested_at": "2026-11-21T04:09:44+00:00",
+  "test_url": "https://www.gstatic.com/generate_204",
+  "tested": 1475,
+  "alive": 393,
+  "failed": 1082,
+  "timeout_ms": 4500,
+  "latency_ms": {
+    "min": 553,
+    "median": 1383,
+    "max": 4131
+  }
+}
