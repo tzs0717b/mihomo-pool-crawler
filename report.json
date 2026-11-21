@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-11-21T03:57:44+00:00",
+  "total_nodes": 1475,
+  "sources": {
+    "freeSub": {
+      "url": "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
+      "ok": true,
+      "nodes": 421,
+      "parsed": 421
+    },
+    "NoMoreWalls": {
+      "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml",
+      "ok": true,
+      "nodes": 298,
+      "parsed": 320
+    },
+    "AutoMergePublicNodes": {
+      "url": "https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.meta.yml",
+      "ok": true,
+      "nodes": 0,
+      "parsed": 320
+    },
+    "zhuhaiuk": {
+      "url": "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml",
+      "ok": true,
+      "nodes": 25,
+      "parsed": 29
+    },
+    "free18": {
+      "url": "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
+      "ok": true,
+      "nodes": 504,
+      "parsed": 504
+    },
+    "ermaozi": {
+      "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
+      "ok": true,
+      "nodes": 93,
+      "parsed": 361
+    },
+    "Eternity": {
+      "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml",
+      "ok": true,
+      "nodes": 134,
+      "parsed": 201
+    }
+  }
+}
