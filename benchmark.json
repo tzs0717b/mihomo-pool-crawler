@@ -1,31 +1,40 @@
 {
-  "tested_at": "2026-11-21T12:11:04+00:00",
+  "tested_at": "2026-11-21T13:18:02+00:00",
   "test_url": "https://www.gstatic.com/generate_204",
-  "tested": 5159,
-  "alive": 1283,
-  "failed": 3876,
+  "tested": 5999,
+  "alive": 1837,
+  "failed": 4162,
   "timeout_ms": 4500,
   "speed_test": {
     "url": "https://speed.cloudflare.com/__down?bytes=262144",
     "sample_bytes": 262144,
-    "candidates": 10,
-    "measured": 10,
+    "candidates": 20,
+    "sampling": "fastest 10 plus 10 evenly spaced across remaining latency ranks",
+    "measured": 18,
     "results_mbps_decimal": {
-      "🇸🇬 新加坡 · 344ms · 0.4MB/s": 0.36,
-      "🌐 未知地区 · 345ms · 0.4MB/s": 0.38,
-      "🇸🇬 新加坡 · 363ms · 0.4MB/s": 0.36,
-      "🇸🇬 新加坡 · 372ms · 0.4MB/s": 0.36,
-      "🌐 未知地区 · 376ms · 0.4MB/s": 0.38,
-      "🇸🇬 新加坡 · 384ms · 0.4MB/s": 0.36,
-      "🌐 未知地区 · 411ms · 0.3MB/s": 0.28,
-      "🌐 未知地区 · 437ms · 0.3MB/s": 0.35,
-      "🇸🇬 新加坡 · 445ms · 0.3MB/s": 0.33,
-      "🇸🇬 新加坡 · 452ms · 0.3MB/s": 0.34
+      "🌐 未知地区 · 319ms · 0.3MB/s": 0.31,
+      "🇸🇬 新加坡 · 346ms · 0.3MB/s": 0.26,
+      "🌐 未知地区 · 355ms · 0.3MB/s": 0.28,
+      "🇸🇬 新加坡 · 375ms · 0.3MB/s": 0.35,
+      "🌐 未知地区 · 378ms · 0.3MB/s": 0.31,
+      "🇸🇬 新加坡 · 382ms · 0.3MB/s": 0.34,
+      "🇸🇬 新加坡 · 422ms · 0.3MB/s": 0.29,
+      "🇸🇬 新加坡 · 437ms · 0.3MB/s": 0.31,
+      "🌐 未知地区 · 478ms · 0.3MB/s": 0.28,
+      "🌐 未知地区 · 493ms · 0.3MB/s": 0.27,
+      "🌐 未知地区 · 772ms · 0.2MB/s": 0.22,
+      "🌐 未知地区 · 946ms · 0.1MB/s": 0.15,
+      "🇨🇦 加拿大 · 1138ms · 0.1MB/s": 0.11,
+      "🇺🇸 美国 · 1278ms · 0.1MB/s": 0.11,
+      "🇮🇳 印度 · 1400ms · 0.1MB/s": 0.11,
+      "🇺🇸 美国 · 1585ms · 0.1MB/s": 0.11,
+      "🌐 未知地区 · 1769ms · 0.1MB/s": 0.09,
+      "🇺🇸 美国 · 1999ms · 0.1MB/s": 0.07
     }
   },
   "latency_ms": {
-    "min": 344,
-    "median": 1383,
-    "max": 4498
+    "min": 319,
+    "median": 1440,
+    "max": 4479
   }
 }

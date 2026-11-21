@@ -197,7 +197,12 @@ def select_proxy(base_url: str, name: str) -> None:
 
 def measure_node_speeds(base_url: str, nodes_with_latency: list[tuple[dict[str, Any], int]], proxy_port: int) -> dict[str, float]:
     results: dict[str, float] = {}
-    best_first = sorted(nodes_with_latency, key=lambda row: row[1])[:SPEED_TEST_COUNT]
+    ordered = sorted(nodes_with_latency, key=lambda row: row[1])
+    best_first = ordered[:SPEED_TEST_COUNT]
+    remaining = ordered[SPEED_TEST_COUNT:]
+    count = min(10, len(remaining))
+    if count:
+        best_first += [remaining[min(len(remaining) - 1, int((i + 0.5) * len(remaining) / count))] for i in range(count)]
     for index, (node, _) in enumerate(best_first, 1):
         try:
             select_proxy(base_url, node["name"])
@@ -321,7 +326,8 @@ def run(input_path: Path, output_path: Path, report_path: Path, mihomo: str, wor
                 "speed_test": {
                     "url": SPEED_URL,
                     "sample_bytes": SPEED_BYTES,
-                    "candidates": min(SPEED_TEST_COUNT, len(success)),
+                    "candidates": min(SPEED_TEST_COUNT + 10, len(success)),
+                    "sampling": "fastest 10 plus 10 evenly spaced across remaining latency ranks",
                     "measured": len(speeds),
                     "results_mbps_decimal": {display_name(node["name"], delay, speeds.get(node["name"])): round(speeds[node["name"]], 2) for node, delay in success if node["name"] in speeds},
                 },

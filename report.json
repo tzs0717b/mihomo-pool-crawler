@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T12:07:30+00:00",
-  "total_nodes": 5159,
+  "updated_at": "2026-11-21T13:13:11+00:00",
+  "total_nodes": 5999,
   "sources": {
     "freeSub": {
       "url": "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
@@ -35,8 +35,8 @@
     "ermaozi": {
       "url": "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml",
       "ok": true,
-      "nodes": 138,
-      "parsed": 361
+      "nodes": 49,
+      "parsed": 303
     },
     "Eternity": {
       "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.yml",
@@ -53,7 +53,7 @@
     "yy1588133-proxy-pool": {
       "url": "https://raw.githubusercontent.com/yy1588133/proxy-pool/main/clash.yaml",
       "ok": true,
-      "nodes": 23,
+      "nodes": 105,
       "parsed": 1183
     },
     "go4sharing-sub": {
@@ -65,20 +65,44 @@
     "wzmwayne-proxy-node": {
       "url": "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml",
       "ok": true,
-      "nodes": 889,
-      "parsed": 1196
+      "nodes": 1624,
+      "parsed": 2423
     },
     "735754647-Free-Nodes": {
       "url": "https://735754647.github.io/Free-Nodes/clash.yaml",
       "ok": true,
-      "nodes": 833,
+      "nodes": 851,
       "parsed": 1139
     },
     "steam-100-free-proxy-sub": {
       "url": "https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml",
       "ok": true,
-      "nodes": 14,
-      "parsed": 15
+      "nodes": 9,
+      "parsed": 10
+    },
+    "ermao-blog": {
+      "url": "https://blog.ermao.net/sub/clash/ermao.net",
+      "ok": true,
+      "nodes": 0,
+      "parsed": 303
+    },
+    "PuddinCat-BestClash": {
+      "url": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
+      "ok": true,
+      "nodes": 5,
+      "parsed": 16
+    },
+    "snakem982-proxypool": {
+      "url": "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml",
+      "ok": true,
+      "nodes": 0,
+      "parsed": 47
+    },
+    "OgdenThomas-freesub": {
+      "url": "https://cdn.jsdelivr.net/gh/OgdenThomas/freesub@main/output/clash.yaml",
+      "ok": true,
+      "nodes": 94,
+      "parsed": 147
     }
   }
 }

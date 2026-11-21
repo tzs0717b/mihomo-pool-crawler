@@ -43,6 +43,10 @@ SOURCES = {
     "wzmwayne-proxy-node": "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml",
     "735754647-Free-Nodes": "https://735754647.github.io/Free-Nodes/clash.yaml",
     "steam-100-free-proxy-sub": "https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml",
+    "ermao-blog": "https://blog.ermao.net/sub/clash/ermao.net",
+    "PuddinCat-BestClash": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
+    "snakem982-proxypool": "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml",
+    "OgdenThomas-freesub": "https://cdn.jsdelivr.net/gh/OgdenThomas/freesub@main/output/clash.yaml",
 }
 
 
