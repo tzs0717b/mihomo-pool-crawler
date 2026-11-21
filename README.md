@@ -42,5 +42,7 @@ python scripts/benchmark.py --mihomo /path/to/mihomo
 - [PuddinCat/BestClash](https://github.com/PuddinCat/BestClash)
 - [snakem982/proxypool](https://github.com/snakem982/proxypool)
 - [OgdenThomas/freesub](https://github.com/OgdenThomas/freesub)
+- [clashfree.cc](https://clashfree.cc/)：固定 YAML 地址。
+- [clashv2rayfree.com](https://clashv2rayfree.com/)：按北京时间抓取当天及前一天的 YAML，合并去重。
 
 `report.json` 记录每个源的抓取数量和去重后的新增数量。上游大多也是聚合池；地址能抓取不代表节点可用，可用性以本机测速为准。

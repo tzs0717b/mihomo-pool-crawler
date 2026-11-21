@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T13:13:11+00:00",
-  "total_nodes": 5999,
+  "updated_at": "2026-11-21T13:44:15+00:00",
+  "total_nodes": 6555,
   "sources": {
     "freeSub": {
       "url": "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
@@ -52,9 +52,9 @@
     },
     "yy1588133-proxy-pool": {
       "url": "https://raw.githubusercontent.com/yy1588133/proxy-pool/main/clash.yaml",
-      "ok": true,
-      "nodes": 105,
-      "parsed": 1183
+      "ok": false,
+      "error": "URLError",
+      "nodes": 0
     },
     "go4sharing-sub": {
       "url": "https://raw.githubusercontent.com/go4sharing/sub/main/clash.yaml",
@@ -65,13 +65,13 @@
     "wzmwayne-proxy-node": {
       "url": "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml",
       "ok": true,
-      "nodes": 1624,
+      "nodes": 1625,
       "parsed": 2423
     },
     "735754647-Free-Nodes": {
       "url": "https://735754647.github.io/Free-Nodes/clash.yaml",
       "ok": true,
-      "nodes": 851,
+      "nodes": 862,
       "parsed": 1139
     },
     "steam-100-free-proxy-sub": {
@@ -86,10 +86,16 @@
       "nodes": 0,
       "parsed": 303
     },
+    "clashfree.cc": {
+      "url": "https://clashfree.cc/sub/clash.yaml",
+      "ok": true,
+      "nodes": 43,
+      "parsed": 60
+    },
     "PuddinCat-BestClash": {
       "url": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
       "ok": true,
-      "nodes": 5,
+      "nodes": 6,
       "parsed": 16
     },
     "snakem982-proxypool": {
@@ -103,6 +109,18 @@
       "ok": true,
       "nodes": 94,
       "parsed": 147
+    },
+    "clashv2rayfree-20261121": {
+      "url": "https://clashv2rayfree.com/sub/20261121-clash.yaml",
+      "ok": true,
+      "nodes": 474,
+      "parsed": 1530
+    },
+    "clashv2rayfree-20261120": {
+      "url": "https://clashv2rayfree.com/sub/20261120-clash.yaml",
+      "ok": true,
+      "nodes": 131,
+      "parsed": 1481
     }
   }
 }

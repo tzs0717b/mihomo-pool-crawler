@@ -13,7 +13,7 @@ import tempfile
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -44,10 +44,20 @@ SOURCES = {
     "735754647-Free-Nodes": "https://735754647.github.io/Free-Nodes/clash.yaml",
     "steam-100-free-proxy-sub": "https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml",
     "ermao-blog": "https://blog.ermao.net/sub/clash/ermao.net",
+    "clashfree.cc": "https://clashfree.cc/sub/clash.yaml",
     "PuddinCat-BestClash": "https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml",
     "snakem982-proxypool": "https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml",
     "OgdenThomas-freesub": "https://cdn.jsdelivr.net/gh/OgdenThomas/freesub@main/output/clash.yaml",
 }
+
+
+def default_sources(now: datetime | None = None) -> dict[str, str]:
+    sources = dict(SOURCES)
+    today = (now or datetime.now(timezone.utc)).astimezone(timezone(timedelta(hours=8))).date()
+    for age in (0, 1):
+        date = (today - timedelta(days=age)).strftime("%Y%m%d")
+        sources[f"clashv2rayfree-{date}"] = f"https://clashv2rayfree.com/sub/{date}-clash.yaml"
+    return sources
 
 
 def fetch(url: str) -> tuple[str | None, str | None]:
@@ -169,7 +179,7 @@ def main() -> int:
     parser.add_argument("--report", type=Path, default=OUT_REPORT)
     parser.add_argument("--source", action="append", default=[], metavar="NAME=URL", help="replace defaults with explicit sources; repeatable")
     args = parser.parse_args()
-    sources = SOURCES
+    sources = default_sources()
     if args.source:
         sources = {}
         for item in args.source:

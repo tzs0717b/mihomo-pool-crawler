@@ -1,10 +1,17 @@
 import unittest
 
-from aggregate import canonical, is_valid_proxy, parse_document
+from datetime import datetime, timezone
+from aggregate import canonical, is_valid_proxy, parse_document, default_sources
 from benchmark import country_info, display_name, config_for_output
 
 
 class AggregateTests(unittest.TestCase):
+    def test_dated_sources_use_beijing_day(self):
+        sources = default_sources(datetime(2026, 11, 21, 17, tzinfo=timezone.utc))
+        self.assertIn("clashv2rayfree-20261122", sources)
+        self.assertIn("clashv2rayfree-20261121", sources)
+        self.assertNotIn("clashv2rayfree-20261120", sources)
+
     def test_country_flags_and_display_name(self):
         self.assertEqual(country_info("🇯🇵 Japan"), ("🇯🇵", "日本"))
         self.assertEqual(country_info("HK - zhuhai.uk"), ("🇭🇰", "香港"))
