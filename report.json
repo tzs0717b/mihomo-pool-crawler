@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-21T11:54:00+00:00",
-  "total_nodes": 3423,
+  "updated_at": "2026-11-21T12:07:30+00:00",
+  "total_nodes": 5159,
   "sources": {
     "freeSub": {
       "url": "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
@@ -61,6 +61,24 @@
       "ok": true,
       "nodes": 10,
       "parsed": 10
+    },
+    "wzmwayne-proxy-node": {
+      "url": "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml",
+      "ok": true,
+      "nodes": 889,
+      "parsed": 1196
+    },
+    "735754647-Free-Nodes": {
+      "url": "https://735754647.github.io/Free-Nodes/clash.yaml",
+      "ok": true,
+      "nodes": 833,
+      "parsed": 1139
+    },
+    "steam-100-free-proxy-sub": {
+      "url": "https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml",
+      "ok": true,
+      "nodes": 14,
+      "parsed": 15
     }
   }
 }

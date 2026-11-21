@@ -40,6 +40,9 @@ SOURCES = {
     "anaer-Sub": "https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml",
     "yy1588133-proxy-pool": "https://raw.githubusercontent.com/yy1588133/proxy-pool/main/clash.yaml",
     "go4sharing-sub": "https://raw.githubusercontent.com/go4sharing/sub/main/clash.yaml",
+    "wzmwayne-proxy-node": "https://raw.githubusercontent.com/wzmwayne/proxy-node/main/output/aio/clash.yaml",
+    "735754647-Free-Nodes": "https://735754647.github.io/Free-Nodes/clash.yaml",
+    "steam-100-free-proxy-sub": "https://raw.githubusercontent.com/steam-100/free-proxy-sub/data/clash.yaml",
 }
 
 

@@ -35,5 +35,8 @@ python scripts/benchmark.py --mihomo /path/to/mihomo
 - [anaer/Sub](https://github.com/anaer/Sub)
 - [yy1588133/proxy-pool](https://github.com/yy1588133/proxy-pool)
 - [go4sharing/sub](https://github.com/go4sharing/sub)
+- [wzmwayne/proxy-node](https://github.com/wzmwayne/proxy-node)
+- [735754647/Free-Nodes](https://github.com/735754647/Free-Nodes)
+- [steam-100/free-proxy-sub](https://github.com/steam-100/free-proxy-sub)
 
 `report.json` 记录每个源的抓取数量和去重后的新增数量。上游大多也是聚合池；地址能抓取不代表节点可用，可用性以本机测速为准。
